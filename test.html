@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<<<<<<< HEAD
-
+<title>Final Project</title>
 <style>
 
- #wrapper {
-<<<<<<< HEAD
-
-<title>Final project</title>
-<style>
-
-         #wrapper {
-=======
-=======
-<title>Final project</title>
-<style>
-
-         #wrapper {
->>>>>>> 3b43ec863a80217953e18c30d207621b6ac568a0
->>>>>>> 5a5d9ce553a1c626f67817bc4a2e2b0c0cd15c8c
+  #wrapper {
   border: 1px #e4e4e4 solid;
   padding: 20px;
   border-radius: 10px;
@@ -39,7 +24,6 @@ body {
   margin: 2em; 
 }
 
-<<<<<<< HEAD
 .dropbtn {
     background-color: #415FD9;
     color: white;
@@ -78,83 +62,6 @@ body {
 .dropdown a:hover {background-color: #f1f1f1}
 
 .show {display:block;}
-</style>
-
-<body>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <!-- I recommend you host this file on your own, since this will change without warning -->
-  <script src="datamaps.world.min.js"></script>
-  <h2>Datamaps Playground</h2>
-  
-  
-  
-<div id="wrapper" class="container">  
-  
-  <div class="row">
-        <div class="col-md-4">
-		<img class="img-responsive"  src="worldcup.jpg" alt="ODU"style="width:220px;height:220px;">
-        </div>
-       
-      <h1 style ="color:steelblue">World cup statistics</h1>
-        </div>
-      <br>
-	  
-	    
-  <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Select Year</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">1930</a>
-      <a href="#">1934</a>
-      <a href="#">1938</a>
-    </div>
-  </div>
-
-	  
-	 <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
-	 
-	 
-	 
-	 
-	 
-	 
-
-	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-     
-
-	 
-	 
-	 
-<script>
-	 
-	 /* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-	function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show");
-	}
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
-
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
-	 
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 5a5d9ce553a1c626f67817bc4a2e2b0c0cd15c8c
-
 
 
 </style>
@@ -173,7 +80,15 @@ body {
    
         </div>
      <br>
- 
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select Year</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">1930</a>
+      <a href="#">1934</a>
+      <a href="#">1938</a>
+    </div>
+  </div>
+  
 <div id="container1" class="container">
 
 
@@ -199,7 +114,27 @@ body {
       
  	
      <script>
->>>>>>> 3b43ec863a80217953e18c30d207621b6ac568a0
+      /* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	 
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
         scope: 'world',
@@ -207,7 +142,6 @@ body {
         projection: 'mercator',
         height: 1000,
         fills: {
-<<<<<<< HEAD
           defaultFill: '#A4CDDD',
           lt50: '6F88C6',
           first: '#F5D233',
@@ -230,28 +164,10 @@ body {
 		  BEL: {fillKey: 'lt50' },
 		  BOL: {fillKey: 'lt50' }
 
-=======
-          defaultFill: '#f0af0a',
-          x: 'blue',
-          gt50: 'red'
-        },
-        
-        data: {
-          USA: {fillKey: 'x' },
-          RUS: {fillKey: 'x' },
-          CAN: {fillKey: 'x' },
-          BRA: {fillKey: 'gt50' },
-          ARG: {fillKey: 'gt50'},
-          COL: {fillKey: 'gt50' },
-          AUS: {fillKey: 'gt50' },
-          ZAF: {fillKey: 'gt50' },
-          MAD: {fillKey: 'gt50' }       
->>>>>>> 3b43ec863a80217953e18c30d207621b6ac568a0
         }
       })
       
       
-<<<<<<< HEAD
       //sample of the arc plugin
     /*map.arc([
        {
@@ -282,13 +198,6 @@ body {
        {name: 'First Place', latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
        {name: 'Second Place', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
        {name: 'Third Place', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
-=======
-
-     map.bubbles([
-       {name: 'Hot', latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
-       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
-       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
->>>>>>> 3b43ec863a80217953e18c30d207621b6ac568a0
 
      ], {
        popupTemplate: function(geo, data) {
