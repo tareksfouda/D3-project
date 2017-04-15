@@ -2,7 +2,8 @@
   "rows" : [
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 18,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -15,7 +16,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 15,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -28,7 +30,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 7,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -41,7 +44,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -54,7 +58,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 5,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -67,7 +72,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 5,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -80,7 +86,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -93,7 +100,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 4,
       "Goals against" : 13,
       "Penalty Goals" : 1,
@@ -106,7 +114,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -119,7 +128,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -132,7 +142,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "BER",
+      "Team" : "Peru",
+      "ISO" : "BER",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -145,7 +156,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 0,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -158,7 +170,8 @@
     },
     {
       "Year" : 1930,
-      "Team (winner in bold)" : "BOL",
+      "Team" : "Bolivia",
+      "ISO" : "BOL",
       "Goals for" : 0,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -171,7 +184,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 12,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -184,7 +198,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 11,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -197,7 +212,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 9,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -210,7 +226,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -223,7 +240,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -236,7 +254,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -249,7 +268,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -262,7 +282,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -275,7 +296,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -288,7 +310,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -301,7 +324,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -314,7 +338,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "EGY",
+      "Team" : "Egypt",
+      "ISO" : "EGY",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -327,7 +352,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -340,7 +366,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 1,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -353,7 +380,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -366,7 +394,8 @@
     },
     {
       "Year" : 1934,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 1,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -379,7 +408,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 15,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -392,7 +422,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 14,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -405,7 +436,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 11,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -418,7 +450,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 11,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -431,7 +464,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 5,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -444,7 +478,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -457,7 +492,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -470,7 +506,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "CUB",
+      "Team" : "Cuba",
+      "ISO" : "CUB",
       "Goals for" : 5,
       "Goals against" : 12,
       "Penalty Goals" : 0,
@@ -483,7 +520,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -496,7 +534,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -509,7 +548,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -522,7 +562,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "NOR",
+      "Team" : "Norway",
+      "ISO" : "NOR",
       "Goals for" : 1,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -535,7 +576,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -548,7 +590,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 0,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -561,7 +604,8 @@
     },
     {
       "Year" : 1938,
-      "Team (winner in bold)" : "IDN",
+      "Team" : "Indonesia",
+      "ISO" : "IDN",
       "Goals for" : 0,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -574,7 +618,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 22,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -587,7 +632,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 15,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -600,7 +646,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 11,
       "Goals against" : 17,
       "Penalty Goals" : 1,
@@ -613,7 +660,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 10,
       "Goals against" : 10,
       "Penalty Goals" : 0,
@@ -626,7 +674,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 7,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -639,7 +688,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -652,7 +702,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -665,7 +716,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -678,7 +730,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 4,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -691,7 +744,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -704,7 +758,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -717,7 +772,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 2,
       "Goals against" : 10,
       "Penalty Goals" : 1,
@@ -730,7 +786,8 @@
     },
     {
       "Year" : 1950,
-      "Team (winner in bold)" : "BOL",
+      "Team" : "Bolivia",
+      "ISO" : "BOL",
       "Goals for" : 0,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -743,7 +800,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 27,
       "Goals against" : 10,
       "Penalty Goals" : 1,
@@ -756,7 +814,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 25,
       "Goals against" : 15,
       "Penalty Goals" : 2,
@@ -769,7 +828,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 17,
       "Goals against" : 13,
       "Penalty Goals" : 1,
@@ -782,7 +842,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 16,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -795,7 +856,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 11,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -808,7 +870,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "TUR",
+      "Team" : "Turkey",
+      "ISO" : "TUR",
       "Goals for" : 10,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -821,7 +884,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 8,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -834,7 +898,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 8,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -847,7 +912,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 6,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -860,7 +926,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 5,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -873,7 +940,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -886,7 +954,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -899,7 +968,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -912,7 +982,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 0,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -925,7 +996,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 0,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -938,7 +1010,8 @@
     },
     {
       "Year" : 1954,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 0,
       "Goals against" : 16,
       "Penalty Goals" : 0,
@@ -951,7 +1024,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 23,
       "Goals against" : 15,
       "Penalty Goals" : 1,
@@ -964,7 +1038,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 16,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -977,7 +1052,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 12,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -990,7 +1066,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 12,
       "Goals against" : 14,
       "Penalty Goals" : 0,
@@ -1003,7 +1080,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 9,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -1016,7 +1094,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 9,
       "Goals against" : 12,
       "Penalty Goals" : 1,
@@ -1029,7 +1108,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 7,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1042,7 +1122,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1055,7 +1136,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 6,
       "Goals against" : 10,
       "Penalty Goals" : 0,
@@ -1068,7 +1150,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1081,7 +1164,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 5,
       "Goals against" : 10,
       "Penalty Goals" : 2,
@@ -1094,7 +1178,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "Wales",
+      "Team" : "Wales",
+      "ISO" : "Wales",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -1107,7 +1192,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1120,7 +1206,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1133,7 +1220,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1146,7 +1234,8 @@
     },
     {
       "Year" : 1958,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 1,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -1159,7 +1248,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 14,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1172,7 +1262,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 10,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -1185,7 +1276,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 10,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -1198,7 +1290,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 9,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1211,7 +1304,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 8,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1224,7 +1318,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -1237,7 +1332,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -1250,7 +1346,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "COL",
+      "Team" : "Colombia",
+      "ISO" : "COL",
       "Goals for" : 5,
       "Goals against" : 11,
       "Penalty Goals" : 1,
@@ -1263,7 +1360,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 4,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -1276,7 +1374,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1289,7 +1388,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1302,7 +1402,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -1315,7 +1416,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1328,7 +1430,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1341,7 +1444,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 2,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -1354,7 +1458,8 @@
     },
     {
       "Year" : 1962,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 1,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1367,7 +1472,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 17,
       "Goals against" : 9,
       "Penalty Goals" : 4,
@@ -1380,7 +1486,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 15,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -1393,7 +1500,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 11,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1406,7 +1514,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 10,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1419,7 +1528,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 8,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -1432,7 +1542,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "PRK",
+      "Team" : "Korea DPR",
+      "ISO" : "PRK",
       "Goals for" : 5,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1445,7 +1556,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 4,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1458,7 +1570,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1471,7 +1584,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1484,7 +1598,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1497,7 +1612,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1510,7 +1626,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1523,7 +1640,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1536,7 +1654,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1549,7 +1668,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 1,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1562,7 +1682,8 @@
     },
     {
       "Year" : 1966,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 1,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1575,7 +1696,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 19,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1588,7 +1710,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 17,
       "Goals against" : 10,
       "Penalty Goals" : 1,
@@ -1601,7 +1724,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 10,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1614,7 +1738,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "BER",
+      "Team" : "Peru",
+      "ISO" : "BER",
       "Goals for" : 9,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1627,7 +1752,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 6,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1640,7 +1766,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 6,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -1653,7 +1780,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 5,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1666,7 +1794,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -1679,7 +1808,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1692,7 +1822,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1705,7 +1836,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1718,7 +1850,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1731,7 +1864,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "MAR",
+      "Team" : "Morocco",
+      "ISO" : "MAR",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1744,7 +1878,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1757,7 +1892,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "ISR",
+      "Team" : "Israel",
+      "ISO" : "ISR",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -1770,7 +1906,8 @@
     },
     {
       "Year" : 1970,
-      "Team (winner in bold)" : "SLV",
+      "Team" : "El Salvador",
+      "ISO" : "SLV",
       "Goals for" : 0,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -1783,7 +1920,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 16,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -1796,7 +1934,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 15,
       "Goals against" : 2,
       "Penalty Goals" : 3,
@@ -1809,7 +1948,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 13,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -1822,7 +1962,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 12,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -1835,7 +1976,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 9,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -1848,7 +1990,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 7,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1861,7 +2004,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 6,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -1874,7 +2018,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -1887,7 +2032,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1900,7 +2046,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 3,
       "Goals against" : 1,
       "Penalty Goals" : 0,
@@ -1913,7 +2060,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1926,7 +2074,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "HDI",
+      "Team" : "Haiti",
+      "ISO" : "HDI",
       "Goals for" : 2,
       "Goals against" : 14,
       "Penalty Goals" : 0,
@@ -1939,7 +2088,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 1,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -1952,7 +2102,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 1,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -1965,7 +2116,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "AUS",
+      "Team" : "Australia",
+      "ISO" : "AUS",
       "Goals for" : 0,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -1978,7 +2130,8 @@
     },
     {
       "Year" : 1974,
-      "Team (winner in bold)" : "COD",
+      "Team" : "Zaire",
+      "ISO" : "COD",
       "Goals for" : 0,
       "Goals against" : 14,
       "Penalty Goals" : 0,
@@ -1991,7 +2144,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 15,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -2004,7 +2158,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 15,
       "Goals against" : 9,
       "Penalty Goals" : 4,
@@ -2017,7 +2172,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 10,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -2030,7 +2186,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 10,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2043,7 +2200,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 9,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -2056,7 +2214,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 7,
       "Goals against" : 11,
       "Penalty Goals" : 1,
@@ -2069,7 +2228,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "BER",
+      "Team" : "Peru",
+      "ISO" : "BER",
       "Goals for" : 7,
       "Goals against" : 12,
       "Penalty Goals" : 2,
@@ -2082,7 +2242,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 6,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2095,7 +2256,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2108,7 +2270,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -2121,7 +2284,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "TUN",
+      "Team" : "Tunisia",
+      "ISO" : "TUN",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2134,7 +2298,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 3,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -2147,7 +2312,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2160,7 +2326,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "IRN",
+      "Team" : "Iran",
+      "ISO" : "IRN",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -2173,7 +2340,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 2,
       "Goals against" : 12,
       "Penalty Goals" : 1,
@@ -2186,7 +2354,8 @@
     },
     {
       "Year" : 1978,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -2199,7 +2368,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 16,
       "Goals against" : 12,
       "Penalty Goals" : 1,
@@ -2212,7 +2382,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 15,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2225,7 +2396,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 12,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2238,7 +2410,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 12,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2251,7 +2424,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 12,
       "Goals against" : 10,
       "Penalty Goals" : 0,
@@ -2264,7 +2438,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 11,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2277,7 +2452,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 8,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -2290,7 +2466,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 8,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -2303,7 +2480,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 7,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2316,7 +2494,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 6,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2329,7 +2508,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2342,7 +2522,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "DZA",
+      "Team" : "Algeria",
+      "ISO" : "DZA",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2355,7 +2536,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -2368,7 +2550,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -2381,7 +2564,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2394,7 +2578,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 3,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -2407,7 +2592,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -2420,7 +2606,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "HND",
+      "Team" : "Honduras",
+      "ISO" : "HND",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -2433,7 +2620,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 2,
@@ -2446,7 +2634,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "KWT",
+      "Team" : "Kuwait",
+      "ISO" : "KWT",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2459,7 +2648,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "BER",
+      "Team" : "Peru",
+      "ISO" : "BER",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2472,7 +2662,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "NEL",
+      "Team" : "New Zealand",
+      "ISO" : "NEL",
       "Goals for" : 2,
       "Goals against" : 12,
       "Penalty Goals" : 0,
@@ -2485,7 +2676,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 1,
       "Goals against" : 1,
       "Penalty Goals" : 0,
@@ -2498,7 +2690,8 @@
     },
     {
       "Year" : 1982,
-      "Team (winner in bold)" : "SLV",
+      "Team" : "El Salvador",
+      "ISO" : "SLV",
       "Goals for" : 1,
       "Goals against" : 13,
       "Penalty Goals" : 0,
@@ -2511,7 +2704,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 14,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2524,7 +2718,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 12,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -2537,7 +2732,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 12,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -2550,7 +2746,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 12,
       "Goals against" : 15,
       "Penalty Goals" : 1,
@@ -2563,7 +2760,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 11,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -2576,7 +2774,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 10,
       "Goals against" : 1,
       "Penalty Goals" : 2,
@@ -2589,7 +2788,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "DNK",
+      "Team" : "Denmark",
+      "ISO" : "DNK",
       "Goals for" : 10,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -2602,7 +2802,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 8,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -2615,7 +2816,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 7,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -2628,7 +2830,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 6,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2641,7 +2844,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -2654,7 +2858,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2667,7 +2872,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2680,7 +2886,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "MAR",
+      "Team" : "Morocco",
+      "ISO" : "MAR",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2693,7 +2900,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2706,7 +2914,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2719,7 +2928,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2732,7 +2942,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 2,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -2745,7 +2956,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "HUN",
+      "Team" : "Hungary",
+      "ISO" : "HUN",
       "Goals for" : 2,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -2758,7 +2970,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -2771,7 +2984,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "IRQ",
+      "Team" : "Iraq",
+      "ISO" : "IRQ",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2784,7 +2998,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "DZA",
+      "Team" : "Algeria",
+      "ISO" : "DZA",
       "Goals for" : 1,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2797,7 +3012,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 1,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -2810,7 +3026,8 @@
     },
     {
       "Year" : 1986,
-      "Team (winner in bold)" : "CAN",
+      "Team" : "Canada",
+      "ISO" : "CAN",
       "Goals for" : 0,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -2823,7 +3040,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 15,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -2836,7 +3054,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 10,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -2849,7 +3068,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 10,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -2862,7 +3082,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 8,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -2875,7 +3096,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 8,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -2888,7 +3110,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 7,
       "Goals against" : 9,
       "Penalty Goals" : 1,
@@ -2901,7 +3124,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 6,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2914,7 +3138,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 6,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -2927,7 +3152,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2940,7 +3166,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 4,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -2953,7 +3180,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -2966,7 +3194,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2979,7 +3208,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "COL",
+      "Team" : "Colombia",
+      "ISO" : "COL",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -2992,7 +3222,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "CRI",
+      "Team" : "Costa Rica",
+      "ISO" : "CRI",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3005,7 +3236,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3018,7 +3250,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3031,7 +3264,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3044,7 +3278,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -3057,7 +3292,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3070,7 +3306,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3083,7 +3320,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 2,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -3096,7 +3334,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "ARE",
+      "Team" : "United Arab Emirates",
+      "ISO" : "ARE",
       "Goals for" : 2,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -3109,7 +3348,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "EGY",
+      "Team" : "Egypt",
+      "ISO" : "EGY",
       "Goals for" : 1,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -3122,7 +3362,8 @@
     },
     {
       "Year" : 1990,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 1,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3135,7 +3376,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 15,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -3148,7 +3390,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 11,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -3161,7 +3404,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 10,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -3174,7 +3418,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 10,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -3187,7 +3432,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 10,
       "Goals against" : 11,
       "Penalty Goals" : 3,
@@ -3200,7 +3446,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 9,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -3213,7 +3460,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 8,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -3226,7 +3474,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 8,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -3239,7 +3488,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 8,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3252,7 +3502,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "NGA",
+      "Team" : "Nigeria",
+      "ISO" : "NGA",
       "Goals for" : 7,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3265,7 +3516,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 7,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -3278,7 +3530,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "SAU",
+      "Team" : "Saudi Arabia",
+      "ISO" : "SAU",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -3291,7 +3544,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -3304,7 +3558,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "COL",
+      "Team" : "Colombia",
+      "ISO" : "COL",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3317,7 +3572,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3330,7 +3586,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3343,7 +3600,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3356,7 +3614,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3369,7 +3628,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 3,
       "Goals against" : 11,
       "Penalty Goals" : 0,
@@ -3382,7 +3642,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3395,7 +3656,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "MAR",
+      "Team" : "Morocco",
+      "ISO" : "MAR",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3408,7 +3670,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "NOR",
+      "Team" : "Norway",
+      "ISO" : "NOR",
       "Goals for" : 1,
       "Goals against" : 1,
       "Penalty Goals" : 0,
@@ -3421,7 +3684,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "BOL",
+      "Team" : "Bolivia",
+      "ISO" : "BOL",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3434,7 +3698,8 @@
     },
     {
       "Year" : 1994,
-      "Team (winner in bold)" : "GRC",
+      "Team" : "Greece",
+      "ISO" : "GRC",
       "Goals for" : 0,
       "Goals against" : 10,
       "Penalty Goals" : 0,
@@ -3447,7 +3712,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 15,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -3460,7 +3726,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 14,
       "Goals against" : 10,
       "Penalty Goals" : 1,
@@ -3473,7 +3740,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 13,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -3486,7 +3754,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "HRV",
+      "Team" : "Croatia",
+      "ISO" : "HRV",
       "Goals for" : 11,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -3499,7 +3768,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 10,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -3512,7 +3782,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "DNK",
+      "Team" : "Denmark",
+      "ISO" : "DNK",
       "Goals for" : 9,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -3525,7 +3796,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 8,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -3538,7 +3810,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 8,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3551,7 +3824,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 8,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -3564,7 +3838,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 8,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -3577,7 +3852,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 7,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3590,7 +3866,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "NGA",
+      "Team" : "Nigeria",
+      "ISO" : "NGA",
       "Goals for" : 6,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -3603,7 +3880,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "SVN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 5,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3616,7 +3894,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "MAR",
+      "Team" : "Morocco",
+      "ISO" : "MAR",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3629,7 +3908,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "NOR",
+      "Team" : "Norway",
+      "ISO" : "NOR",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -3642,7 +3922,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 5,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -3655,7 +3936,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "ROU",
+      "Team" : "Romania",
+      "ISO" : "ROU",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3668,7 +3950,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -3681,7 +3964,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 3,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3694,7 +3978,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "AUT",
+      "Team" : "Austria",
+      "ISO" : "AUT",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3707,7 +3992,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "ZAF",
+      "Team" : "South Africa",
+      "ISO" : "ZAF",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -3720,7 +4006,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "JAM",
+      "Team" : "Jamaica",
+      "ISO" : "JAM",
       "Goals for" : 3,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -3733,7 +4020,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "IRN",
+      "Team" : "Iran",
+      "ISO" : "IRN",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3746,7 +4034,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3759,7 +4048,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "Scotland",
+      "Team" : "Scotland",
+      "ISO" : "Scotland",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -3772,7 +4062,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "SAU",
+      "Team" : "Saudi Arabia",
+      "ISO" : "SAU",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 2,
@@ -3785,7 +4076,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 2,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -3798,7 +4090,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "COL",
+      "Team" : "Colombia",
+      "ISO" : "COL",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3811,7 +4104,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "JPN",
+      "Team" : "Japan",
+      "ISO" : "JPN",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3824,7 +4118,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "TUN",
+      "Team" : "Tunisia",
+      "ISO" : "TUN",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -3837,7 +4132,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 1,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -3850,7 +4146,8 @@
     },
     {
       "Year" : 1998,
-      "Team (winner in bold)" : "BGR",
+      "Team" : "Bulgaria",
+      "ISO" : "BGR",
       "Goals for" : 1,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -3863,7 +4160,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 18,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -3876,7 +4174,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 14,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -3889,7 +4188,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 10,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -3902,7 +4202,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "TUR",
+      "Team" : "Turkey",
+      "ISO" : "TUR",
       "Goals for" : 10,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3915,7 +4216,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 8,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -3928,7 +4230,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "SEN",
+      "Team" : "Senegal",
+      "ISO" : "SEN",
       "Goals for" : 7,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -3941,7 +4244,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -3954,7 +4258,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "IRL",
+      "Team" : "Ireland",
+      "ISO" : "IRL",
       "Goals for" : 6,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -3967,7 +4272,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 6,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -3980,7 +4286,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 6,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -3993,7 +4300,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 6,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4006,7 +4314,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 6,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4019,7 +4328,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "JPN",
+      "Team" : "Japan",
+      "ISO" : "JPN",
       "Goals for" : 5,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4032,7 +4342,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "ZAF",
+      "Team" : "South Africa",
+      "ISO" : "ZAF",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4045,7 +4356,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4058,7 +4370,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "DNK",
+      "Team" : "Denmark",
+      "ISO" : "DNK",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4071,7 +4384,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4084,7 +4398,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "CRI",
+      "Team" : "Costa Rica",
+      "ISO" : "CRI",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4097,7 +4412,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -4110,7 +4426,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -4123,7 +4440,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4136,7 +4454,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 3,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4149,7 +4468,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4162,7 +4482,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4175,7 +4496,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "HRV",
+      "Team" : "Croatia",
+      "ISO" : "HRV",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4188,7 +4510,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "ECU",
+      "Team" : "Ecuador",
+      "ISO" : "ECU",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4201,7 +4524,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "SWN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4214,7 +4538,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "NGA",
+      "Team" : "Nigeria",
+      "ISO" : "NGA",
       "Goals for" : 1,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4227,7 +4552,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "TUN",
+      "Team" : "Tunisia",
+      "ISO" : "TUN",
       "Goals for" : 1,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4240,7 +4566,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 0,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4253,7 +4580,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "CHN",
+      "Team" : "China PR",
+      "ISO" : "CHN",
       "Goals for" : 0,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -4266,7 +4594,8 @@
     },
     {
       "Year" : 2002,
-      "Team (winner in bold)" : "SAU",
+      "Team" : "Saudi Arabia",
+      "ISO" : "SAU",
       "Goals for" : 0,
       "Goals against" : 12,
       "Penalty Goals" : 0,
@@ -4279,7 +4608,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 14,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4292,7 +4622,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 12,
       "Goals against" : 2,
       "Penalty Goals" : 1,
@@ -4305,7 +4636,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 11,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4318,7 +4650,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 10,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4331,7 +4664,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 9,
       "Goals against" : 3,
       "Penalty Goals" : 2,
@@ -4344,7 +4678,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 9,
       "Goals against" : 4,
       "Penalty Goals" : 3,
@@ -4357,7 +4692,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 7,
       "Goals against" : 5,
       "Penalty Goals" : 2,
@@ -4370,7 +4706,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 6,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4383,7 +4720,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "ECU",
+      "Team" : "Ecuador",
+      "ISO" : "ECU",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4396,7 +4734,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4409,7 +4748,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "CIV",
+      "Team" : "Ivory Coast",
+      "ISO" : "CIV",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 2,
@@ -4422,7 +4762,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "AUS",
+      "Team" : "Australia",
+      "ISO" : "AUS",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -4435,7 +4776,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "UKR",
+      "Team" : "Ukraine",
+      "ISO" : "UKR",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -4448,7 +4790,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 4,
       "Goals against" : 0,
       "Penalty Goals" : 0,
@@ -4461,7 +4804,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "GHA",
+      "Team" : "Ghana",
+      "ISO" : "GHA",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -4474,7 +4818,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4487,7 +4832,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "CZE",
+      "Team" : "Czech Republic",
+      "ISO" : "CZE",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4500,7 +4846,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4513,7 +4860,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "SWE",
+      "Team" : "Sweden",
+      "ISO" : "SWE",
       "Goals for" : 3,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4526,7 +4874,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "TUN",
+      "Team" : "Tunisia",
+      "ISO" : "TUN",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4539,7 +4888,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "CRI",
+      "Team" : "Costa Rica",
+      "ISO" : "CRI",
       "Goals for" : 3,
       "Goals against" : 9,
       "Penalty Goals" : 0,
@@ -4552,7 +4902,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4565,7 +4916,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "HRV",
+      "Team" : "Croatia",
+      "ISO" : "HRV",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4578,7 +4930,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "POL",
+      "Team" : "Poland",
+      "ISO" : "POL",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4591,7 +4944,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "IRN",
+      "Team" : "Iran",
+      "ISO" : "IRN",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4604,7 +4958,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4617,7 +4972,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "SAU",
+      "Team" : "Saudi Arabia",
+      "ISO" : "SAU",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4630,7 +4986,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "JPN",
+      "Team" : "Japan",
+      "ISO" : "JPN",
       "Goals for" : 2,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -4643,7 +5000,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "MNE",
+      "Team" : "Montenegro",
+      "ISO" : "MNE",
       "Goals for" : 2,
       "Goals against" : 10,
       "Penalty Goals" : 0,
@@ -4656,7 +5014,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "AGO",
+      "Team" : "Angola",
+      "ISO" : "AGO",
       "Goals for" : 1,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4669,7 +5028,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "TGO",
+      "Team" : "Togo",
+      "ISO" : "TGO",
       "Goals for" : 1,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4682,7 +5042,8 @@
     },
     {
       "Year" : 2006,
-      "Team (winner in bold)" : "TTO",
+      "Team" : "Trinidad and Tobago",
+      "ISO" : "TTO",
       "Goals for" : 0,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4695,7 +5056,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 16,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4708,7 +5070,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 12,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4721,7 +5084,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 11,
       "Goals against" : 8,
       "Penalty Goals" : 1,
@@ -4734,7 +5098,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 10,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4747,7 +5112,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 9,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -4760,7 +5126,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 8,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4773,7 +5140,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 7,
       "Goals against" : 1,
       "Penalty Goals" : 0,
@@ -4786,7 +5154,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 6,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -4799,7 +5168,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 5,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4812,7 +5182,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "SVK",
+      "Team" : "Slovakia",
+      "ISO" : "SVK",
       "Goals for" : 5,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -4825,7 +5196,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "GHA",
+      "Team" : "Ghana",
+      "ISO" : "GHA",
       "Goals for" : 5,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -4838,7 +5210,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "CIV",
+      "Team" : "Ivory Coast",
+      "ISO" : "CIV",
       "Goals for" : 4,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4851,7 +5224,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4864,7 +5238,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4877,7 +5252,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "JPN",
+      "Team" : "Japan",
+      "ISO" : "JPN",
       "Goals for" : 4,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4890,7 +5266,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "NGA",
+      "Team" : "Nigeria",
+      "ISO" : "NGA",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -4903,7 +5280,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "ZAF",
+      "Team" : "South Africa",
+      "ISO" : "ZAF",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4916,7 +5294,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "AUS",
+      "Team" : "Australia",
+      "ISO" : "AUS",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4929,7 +5308,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "SWN",
+      "Team" : "Slovenia",
+      "ISO" : "SVN",
       "Goals for" : 3,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -4942,7 +5322,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "DNK",
+      "Team" : "Denmark",
+      "ISO" : "DNK",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -4955,7 +5336,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4968,7 +5350,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -4981,7 +5364,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "PRY",
+      "Team" : "Paraguay",
+      "ISO" : "PRY",
       "Goals for" : 3,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -4994,7 +5378,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -5007,7 +5392,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "GRC",
+      "Team" : "Greece",
+      "ISO" : "GRC",
       "Goals for" : 2,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -5020,7 +5406,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "NEL",
+      "Team" : "New Zealand",
+      "ISO" : "NEL",
       "Goals for" : 2,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -5033,7 +5420,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "SRB",
+      "Team" : "Serbia",
+      "ISO" : "SRB",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5046,7 +5434,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 1,
       "Goals against" : 1,
       "Penalty Goals" : 0,
@@ -5059,7 +5448,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5072,7 +5462,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "PRK",
+      "Team" : "Korea DPR",
+      "ISO" : "PRK",
       "Goals for" : 1,
       "Goals against" : 12,
       "Penalty Goals" : 0,
@@ -5085,7 +5476,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "DZA",
+      "Team" : "Algeria",
+      "ISO" : "DZA",
       "Goals for" : 0,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -5098,7 +5490,8 @@
     },
     {
       "Year" : 2010,
-      "Team (winner in bold)" : "HND",
+      "Team" : "Honduras",
+      "ISO" : "HND",
       "Goals for" : 0,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5111,7 +5504,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "DEU",
+      "Team" : "Germany",
+      "ISO" : "DEU",
       "Goals for" : 18,
       "Goals against" : 4,
       "Penalty Goals" : 1,
@@ -5124,7 +5518,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "NLD",
+      "Team" : "Netherlands",
+      "ISO" : "NLD",
       "Goals for" : 15,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -5137,7 +5532,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "COL",
+      "Team" : "Colombia",
+      "ISO" : "COL",
       "Goals for" : 12,
       "Goals against" : 4,
       "Penalty Goals" : 2,
@@ -5150,7 +5546,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "BRA",
+      "Team" : "Brazil",
+      "ISO" : "BRA",
       "Goals for" : 11,
       "Goals against" : 14,
       "Penalty Goals" : 1,
@@ -5163,7 +5560,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "FRA",
+      "Team" : "France",
+      "ISO" : "FRA",
       "Goals for" : 10,
       "Goals against" : 3,
       "Penalty Goals" : 1,
@@ -5176,7 +5574,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "ARG",
+      "Team" : "Argentina",
+      "ISO" : "ARG",
       "Goals for" : 8,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5189,7 +5588,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "DZA",
+      "Team" : "Algeria",
+      "ISO" : "DZA",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -5202,7 +5602,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "CHE",
+      "Team" : "Switzerland",
+      "ISO" : "CHE",
       "Goals for" : 7,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -5215,7 +5616,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "HRV",
+      "Team" : "Croatia",
+      "ISO" : "HRV",
       "Goals for" : 6,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -5228,7 +5630,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "CHL",
+      "Team" : "Chile",
+      "ISO" : "CHL",
       "Goals for" : 6,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5241,7 +5644,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "BEL",
+      "Team" : "Belgium",
+      "ISO" : "BEL",
       "Goals for" : 6,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5254,7 +5658,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "MEX",
+      "Team" : "Mexico",
+      "ISO" : "MEX",
       "Goals for" : 5,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5267,7 +5672,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "USA",
+      "Team" : "USA",
+      "ISO" : "USA",
       "Goals for" : 5,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -5280,7 +5686,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "CRI",
+      "Team" : "Costa Rica",
+      "ISO" : "CRI",
       "Goals for" : 5,
       "Goals against" : 2,
       "Penalty Goals" : 0,
@@ -5293,7 +5700,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "BIH",
+      "Team" : "Bosnia and Herzegovina",
+      "ISO" : "BIH",
       "Goals for" : 4,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5306,7 +5714,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "CIV",
+      "Team" : "Ivory Coast",
+      "ISO" : "CIV",
       "Goals for" : 4,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -5319,7 +5728,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "GHA",
+      "Team" : "Ghana",
+      "ISO" : "GHA",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -5332,7 +5742,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "EXP",
+      "Team" : "Spain",
+      "ISO" : "EXP",
       "Goals for" : 4,
       "Goals against" : 7,
       "Penalty Goals" : 1,
@@ -5345,7 +5756,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "PRT",
+      "Team" : "Portugal",
+      "ISO" : "PRT",
       "Goals for" : 4,
       "Goals against" : 7,
       "Penalty Goals" : 0,
@@ -5358,7 +5770,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "URY",
+      "Team" : "Uruguay",
+      "ISO" : "URY",
       "Goals for" : 4,
       "Goals against" : 6,
       "Penalty Goals" : 1,
@@ -5371,7 +5784,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "ECU",
+      "Team" : "Ecuador",
+      "ISO" : "ECU",
       "Goals for" : 3,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5384,7 +5798,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "KOR",
+      "Team" : "Korea Republic",
+      "ISO" : "KOR",
       "Goals for" : 3,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -5397,7 +5812,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "AUS",
+      "Team" : "Australia",
+      "ISO" : "AUS",
       "Goals for" : 3,
       "Goals against" : 9,
       "Penalty Goals" : 1,
@@ -5410,7 +5826,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "GRC",
+      "Team" : "Greece",
+      "ISO" : "GRC",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 1,
@@ -5423,7 +5840,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "NGA",
+      "Team" : "Nigeria",
+      "ISO" : "NGA",
       "Goals for" : 3,
       "Goals against" : 5,
       "Penalty Goals" : 0,
@@ -5436,7 +5854,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "ITA",
+      "Team" : "Italy",
+      "ISO" : "ITA",
       "Goals for" : 2,
       "Goals against" : 3,
       "Penalty Goals" : 0,
@@ -5449,7 +5868,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "RUS",
+      "Team" : "Russia",
+      "ISO" : "RUS",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5462,7 +5882,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "GBR",
+      "Team" : "England",
+      "ISO" : "GBR",
       "Goals for" : 2,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5475,7 +5896,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "JPN",
+      "Team" : "Japan",
+      "ISO" : "JPN",
       "Goals for" : 2,
       "Goals against" : 6,
       "Penalty Goals" : 0,
@@ -5488,7 +5910,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "IRN",
+      "Team" : "Iran",
+      "ISO" : "IRN",
       "Goals for" : 1,
       "Goals against" : 4,
       "Penalty Goals" : 0,
@@ -5501,7 +5924,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "HND",
+      "Team" : "Honduras",
+      "ISO" : "HND",
       "Goals for" : 1,
       "Goals against" : 8,
       "Penalty Goals" : 0,
@@ -5514,7 +5938,8 @@
     },
     {
       "Year" : 2014,
-      "Team (winner in bold)" : "CMR",
+      "Team" : "Cameroon",
+      "ISO" : "CMR",
       "Goals for" : 1,
       "Goals against" : 9,
       "Penalty Goals" : 0,
