@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Final project</title>
+<style>
+
+         #wrapper {
+  border: 1px #e4e4e4 solid;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px #ccc;
+  background-color: #fff;
+  width:1300px;
+}
+
+
+body { 
+   background:url(worldcup.jpg),linear-gradient(gold,gold);
+     background-size: 9000px 600px,9000px 900px;
+    background-repeat: non-repeat,non-repeat;
+    
+    padding: 15px;
+  color: #0000;
+  font: normal 10px "Helvetica Neue", Helvetica, sans-serif; 
+  margin: 2em; 
+}
+
+
+
+
+</style>
+<body >
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+ <div id="wrapper" class="container">
+<div class="row">
+        <div class="col-md-4">
+<img class="img-responsive"  src="worldcup.jpg" alt="ODU"style="width:220px;height:220px;">
+        </div>
+       
+      <h1 style ="color:steelblue">World cup statistics</h1>
+   
+        </div>
+     <br>
+ 
+<div id="container1" class="container">
+
+
+<br></br>
+<div id="container" align = "center"></div>
+
+  </div>
+  
+  
+
+
+
+<link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="nv.d3.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      
+ 	
+     <script>
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 1000,
+        fills: {
+          defaultFill: '#f0af0a',
+          x: 'blue',
+          gt50: 'red'
+        },
+        
+        data: {
+          USA: {fillKey: 'x' },
+          RUS: {fillKey: 'x' },
+          CAN: {fillKey: 'x' },
+          BRA: {fillKey: 'gt50' },
+          ARG: {fillKey: 'gt50'},
+          COL: {fillKey: 'gt50' },
+          AUS: {fillKey: 'gt50' },
+          ZAF: {fillKey: 'gt50' },
+          MAD: {fillKey: 'gt50' }       
+        }
+      })
+      
+      
+
+     map.bubbles([
+       {name: 'Hot', latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
+       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
+       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
+
+     ], {
+       popupTemplate: function(geo, data) {
+         return "<div class='hoverinfo'>It is " + data.name + "</div>";
+       }
+     });
+     </script>
+</body>
