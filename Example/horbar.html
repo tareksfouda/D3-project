@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dsnap - Charts</title>
+	<link href="c3.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div id="chart"></div>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	
+<script src="c3.js"></script>
+	<script>
+	var chart = c3.generate({
+    data: {
+        url: 'c3_test.csv',
+		x: 'year'
+    },
+	axis: {
+        x: {
+            type: 'timeseries',
+            tick: {
+                format: '%Y'
+            }
+        }
+    }
+});
+	</script>
+</body>
+</html>
