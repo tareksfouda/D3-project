@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ODU Student Demographics Project - Prototype</title>
+<style>
+body { 
+  color: #666; 
+  background: #f3f3f3; 
+  font: normal 10px "Helvetica Neue", Helvetica, sans-serif; 
+  margin: 2em; 
+}
+#map {
+  border:2px solid #000;
+  width:960px;
+  height:550px;
+}
+.country:hover{
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.selected {
+    fill: red;
+}
+.country {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linejoin: round;
+}
+
+.hidden { 
+  display: none; 
+}
+ 
+div.tooltip {
+  color: #222; 
+  background: #fff; 
+  padding: .5em; 
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px; 
+  box-shadow: 0px 0px 2px 0px #a6a6a6; 
+  opacity: 0.9; 
+  position: absolute;
+}
+
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 150px;
+  height: 10px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: 150px;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+
+
+
+.d3-slider {
+    position: relative;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+    border: 1px solid #aaaaaa;
+    z-index: 2;
+}
+
+.d3-slider-horizontal {
+    height: .8em;
+}  
+
+.d3-slider-vertical {
+    width: .8em;
+    height: 100px;
+}      
+
+.d3-slider-handle {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    background: #eee;
+    background: linear-gradient(to bottom, #eee 0%, #ddd 100%);
+    z-index: 3;
+}
+
+.d3-slider-handle:hover {
+    border: 1px solid #999999;
+}
+
+.d3-slider-horizontal .d3-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+
+.d3-slider-axis {
+    position: relative;
+    z-index: 1;    
+}
+
+.d3-slider-axis-bottom {
+    top: .8em;
+}
+
+.d3-slider-axis-right {
+    left: .8em;
+}
+
+.d3-slider-axis path {
+    stroke-width: 0;
+    fill: none;
+}
+
+.d3-slider-axis line {
+    fill: none;
+    stroke: #aaa;
+    shape-rendering: crispEdges;
+}
+
+.d3-slider-axis text {
+    font-size: 11px;
+}
+
+.d3-slider-vertical .d3-slider-handle {
+    left: -.25em;
+    margin-left: 0;
+    margin-bottom: -.6em;      
+}
+
+ 
+
+	.wrapper div {
+		margin: 35px 0;
+	}
+
+    .wrapper {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+	
+	
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+
+</style>
+<body>
+<h1>ODU Student Demographics Project - Prototype</h1>
+
+<br></br>
+
+
+
+<div id="map"></div>
+<div id="countryy" style = "display : none">India</div>
+<div id="CMCount" style = "display : none">0</div>
+
+
+
+<p>Select Major from the dropdown below</p>
+<input class="typeahead" type="text" placeholder="Major" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;">
+<div id="tagsname" style = "display : none">Computer Science</div>
+<div class="wrapper">
+    <div id="slider6"></div>
+	<div id="year" style = "display : none">2015</div>
+  </div>
+ 
+<div id="option"> <input name="updateButton" type="button" value="Line Chart" onclick="updateBar.lineChart()" /> <input name="updateButton" type="button" value="Bar Chart" onclick="favMajor()" />
+</div>
+
+
+<!--
+<select id="ddlViewBy" onchange="favMajor()" style="position: relative; top: -1px; left: 600px;">
+  <option value="1">cs</option>
+  <option value="2" selected="selected">ec</option>
+</select> -->
+<script src="js/d3.v3.min.js"></script>
+<script src="js/queue.v1.js"></script>
+<script src="js/topojson.js"></script>
+<script src="d3.slider.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
+
+<script>
+	var prev;
+	var minn = 2006;
+	var maxx = 2015;
+    var axis = d3.svg.axis().orient("top").ticks(11);
+    
+
+  d3.select('#slider6').call(d3.slider().axis(true).value(maxx).min(minn).max(maxx).step(1).on("slide", function(evt, value) {
+  d3.select('#year').text(value);
+  drawMap.colorMap();
+  //favMajor();
+  updateBar.diffMajor();
+  
+}));
+
+
+drawMap()
+favMajor()
+ var numbers = new Bloodhound({
+      datumTokenizer: function(d) { 
+          return Bloodhound.tokenizers.whitespace(d.num); 
+      },
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      local: [
+          { num: 'Computer Science' },
+          { num: 'Electronics' },
+          { num: 'Chemistry' },
+          { num: 'Biology' },
+          { num: 'five' },
+          { num: 'six' },
+          { num: 'seven' },
+          { num: 'eight' },
+          { num: 'nine' },
+          { num: 'ten' }
+      ]
+});
+
+numbers.initialize();
+
+$('.typeahead').typeahead(null, {
+    displayKey: 'num',
+    source: numbers.ttAdapter()
+});
+
+$('.typeahead').on('typeahead:selected', function (e, datum) {
+    //console.log(datum.num);
+	$('#tagsname').html(this.value);
+	drawMap()
+	favMajor()
+});
+
+
+function drawMap(){
+
+var width  = 960,
+    height = 550;
+
+var color = d3.scale.category10();
+
+var projection = d3.geo.mercator()
+                .translate([480, 300])
+                .scale(970);
+
+var path = d3.geo.path()
+    .projection(projection);
+
+	d3.select("#worldmap").remove();
+	//d3.select("#ID1").remove();
+var svg = d3.select("#map").append("svg").attr("id", "worldmap")
+    .attr("width", width)
+    .attr("height", height);
+
+var tooltip = d3.select("#map").append("div")
+    .attr("class", "tooltip");
+	
+var dataset = [];
+
+queue()
+    .defer(d3.json, "http://webspace.cs.odu.edu/~nmajeti/InfoViz/World/data/world-110m.json")
+    .defer(d3.tsv, "http://webspace.cs.odu.edu/~nmajeti/InfoViz/World/data/world-country-names.tsv")
+    .await(ready);
+
+function ready(error, world, names) {
+
+  var countries = topojson.object(world, world.objects.countries).geometries,
+      neighbors = topojson.neighbors(world, countries),
+      i = -1,
+      n = countries.length;
+
+  countries.forEach(function(d) { 
+    d.name = names.filter(function(n) { return d.id == n.id; })[0].name; 
+  });
+
+  
+
+
+
+var country = svg.selectAll(".country").data(countries);
+
+  country
+   .enter()
+    .insert("path")
+    .attr("class", "country")    
+      .attr("title", function(d,i) { return d.name; })
+      .attr("d", path);
+	  
+	  colorMap();
+	  
+	  function colorMap() {
+	  d3.csv("bar-data.csv", function(error, data) {
+    data.forEach(function(d) {
+        d.value = +d.value;
+    });
+
+
+var SelYear = d3.select("#year").text();
+var SelMajor = d3.select("#tagsname").text();
+
+var FiltData = data.filter(function(d, i) { if(d.date == SelYear && d.major == SelMajor) return d;})
+
+ var split = [50, 100, 150, 200, 250, 300, 350, 400];
+  var colors = ["#F7FBFF","#DEEBF7","#C6DBEF","#9ECAE1","#6BAED6","#4292C6","#2171B5","#08519C","#08306B"];
+
+  var color = d3.scale.threshold()
+      .domain(split)
+      .range(colors);
+
+country.transition().duration(1000).delay(function(d, i) {return i * 10;}).style("fill", colorize);
+
+function colorize(data) { 
+
+var m = FiltData.filter(function(FiltData) { return FiltData.countryName == data.name; } )
+
+
+if(m.length>0) {  return color(m[0].value) }
+
+}
+
+
+
+	
+});
+
+}
+
+drawMap.colorMap = colorMap;
+	  
+	  			d3.csv("http://webspace.cs.odu.edu/~nmajeti/InfoViz/World/bar-data.csv", function(error, data) {
+		
+	country
+      .on("mousemove", function(d,i) {
+        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+		var contsel = d.name;
+		
+		//console.log(contsel);
+		
+		
+		var newData1 = d3.select("#tagsname").text();	
+		//console.log(newData1);
+		
+		var newYear = d3.select("#year").text();	
+		
+		//console.log(newYear);
+		
+		data.forEach(function(d) {
+						if (d.countryName == contsel && d.major == newData1 && d.date == newYear)
+						{
+						//console.log(d.value);
+						d3.select("#CMCount").text(d.value);
+						}
+						
+				});
+				
+		var CMCount = d3.select("#CMCount").text();
+		
+        tooltip
+          .classed("hidden", false)
+          .attr("style", "left:"+(mouse[0]+25)+"px;top:"+mouse[1]+"px")
+		  //.attr("style", "position: relative")
+          .html(d.name + "," + CMCount)
+      })
+      .on("mouseout",  function(d,i) {
+        tooltip.classed("hidden", true);
+		d3.select("#CMCount").text("0");
+      })
+	  .on("click", function(d,i) {
+	  
+
+	  var Selcountry = d.name;
+	  
+	  d3.select("#countryy").text(Selcountry);
+	  
+	
+			d3.select(prev).style("stroke", null).style("stroke-width", ".5px");
+			current = this;
+			console.log(this);
+			d3.select(current).style("stroke","red").style("stroke-width", "2px");
+			prev=current;
+			console.log(prev);
+	  
+		favMajor();
+			
+
+			
+	
+});
+//favMajor();
+
+});
+
+}
+} // end of draw map
+
+
+	function updateBar(newData) {
+	
+		
+			var Selcountry = d3.select("#countryy").text();
+			//console.log(Selcountry);
+
+			var marginMaj = {top: 20, right: 20, bottom: 70, left: 40},
+			widthMaj = 600 - marginMaj.left - marginMaj.right,
+			heightMaj = 300 - marginMaj.top - marginMaj.bottom;
+
+			// Parse the date / time
+			var	parseDate = d3.time.format("%Y").parse;
+
+			var x = d3.scale.ordinal().rangeRoundBands([0, widthMaj], .05);
+
+			var y = d3.scale.linear().range([heightMaj, 0]);
+
+			var xAxis = d3.svg.axis()
+						  .scale(x)
+						  .orient("bottom")
+						  .tickFormat(d3.time.format("%Y"));
+
+			var yAxis = d3.svg.axis()
+						  .scale(y)
+						  .orient("left");
+	
+			d3.select("#ID1").remove();
+
+			var svgMaj = d3.select("body").append("svg").attr("id", "ID1")
+						   .attr("width", widthMaj + marginMaj.left + marginMaj.right)
+						   .attr("height", heightMaj + marginMaj.top + marginMaj.bottom)
+					       .append("g")
+						   .attr("transform", "translate(" + marginMaj.left + "," + marginMaj.top + ")");
+						   
+						   
+						   
+			
+						  
+			
+
+			d3.csv("http://webspace.cs.odu.edu/~nmajeti/InfoViz/World/bar-data.csv", function(error, data) {
+			
+			
+			
+			var originalData = data;
+			
+			data.forEach(function(d) {
+		
+						d.date = parseDate(d.date);
+						d.value = +d.value;
+				});
+				
+			staticMax = d3.max(data, function(d) {  return d.value; });
+			x.domain(data.map(function(d) { return d.date; }));
+			y.domain([0, d3.max(data, function(d) {  return d.value; })]);
+			
+			
+			var newdata = data.filter(function(d, i) { if (d.major == newData && d.countryName == Selcountry) return d;})
+	
+	
+			data = newdata;
+
+			
+	
+			x.domain(data.map(function(d) { return d.date; }));
+			y.domain([0, d3.max(data, function(d) {  return d.value; })]);
+
+			svgMaj.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + heightMaj + ")")
+				.call(xAxis)
+				.selectAll("text")
+				.style("text-anchor", "end")
+				.attr("dx", "-.8em")
+				.attr("dy", "-.55em")
+				.attr("transform", "rotate(-90)" );
+
+			svgMaj.append("g")
+				.attr("class", "y axis")
+				.call(yAxis)
+				.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("y", 6)
+				.attr("dy", ".71em")
+				.style("text-anchor", "end")
+				.text("Count");
+
+			var rect = svgMaj.append("g").attr("id","barChart").selectAll("bar")
+							.data(data)
+							.enter().append("rect")
+							.style("fill", "steelblue")
+							.attr("x", function(d) {  return x(d.date); })
+							.attr("width", x.rangeBand())
+							.attr('y', heightMaj)
+							.attr('height', 0);
+	  
+					rect.transition()
+					.attr("height", function(d) {  return heightMaj - y(d.value); })
+					.attr("y", function(d) {  return y(d.value); })
+					.delay(function(d, i) { return i * 20; })
+					.duration(1000)
+					.ease("elastic");
+					
+			diffMajor();
+			function diffMajor() {
+			
+			data = originalData;
+			
+			newYear = d3.select("#year").text();
+			var newdata = data.filter(function(d, i) { if (d.date.getFullYear() == newYear && d.countryName == Selcountry) return d;})
+	
+	
+			data = newdata;
+			
+			var xDM = d3.scale.ordinal().rangeRoundBands([0, widthMaj], .05);
+
+			var yDM = d3.scale.linear().range([heightMaj, 0]);
+
+			var xAxisDM = d3.svg.axis()
+						  .scale(xDM)
+						  .orient("bottom");
+
+			var yAxisDM = d3.svg.axis()
+						  .scale(yDM)
+						  .orient("left");
+	
+			d3.select("#ID2").remove();
+
+			var svgdiffMaj = d3.select("body").append("svg").attr("id", "ID2")
+						   .attr("width", widthMaj + marginMaj.left + marginMaj.right)
+						   .attr("height", heightMaj + marginMaj.top + marginMaj.bottom)
+					       .append("g")
+						   .attr("transform", "translate(" + marginMaj.left + "," + marginMaj.top + ")");
+						   
+						   
+			
+			
+			
+			xDM.domain(data.map(function(d) { return d.major; }));
+			yDM.domain([0, d3.max(data, function(d) {  return d.value; })]);
+
+			svgdiffMaj.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + heightMaj + ")")
+				.call(xAxisDM)
+				.selectAll("text")
+				.style("text-anchor", "end")
+				.attr("dx", "-.8em")
+				.attr("dy", "-.55em")
+				.attr("transform", "rotate(-90)" );
+
+			svgdiffMaj.append("g")
+				.attr("class", "y axis")
+				.call(yAxisDM)
+				.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("y", 6)
+				.attr("dy", ".71em")
+				.style("text-anchor", "end")
+				.text("Count");
+
+			var rectDM = svgdiffMaj.selectAll("bar")
+							.data(data)
+							.enter().append("rect")
+							.style("fill", "steelblue")
+							.attr("x", function(d) {  return xDM(d.major); })
+							.attr("width", xDM.rangeBand())
+							.attr('y', heightMaj)
+							.attr('height', 0);
+	  
+					rectDM.transition()
+					.attr("height", function(d) { return heightMaj - yDM(d.value); })
+					.attr("y", function(d) {  return yDM(d.value); })
+					.delay(function(d, i) { return i * 20; })
+					.duration(1000)
+					.ease("elastic");
+			}
+			updateBar.diffMajor = diffMajor;
+
+		});
+
+	
+
+function lineChart()
+{
+d3.select("#barChart").remove();
+d3.select("#ID1").selectAll(".axis").remove();
+
+// Set the dimensions of the canvas / graph
+var margin = {top: 30, right: 20, bottom: 30, left: 50},
+    width = 600 - margin.left - margin.right,
+    height = 270 - margin.top - margin.bottom;
+
+// Parse the date / time
+var parseDate = d3.time.format("%Y").parse,
+    formatDate = d3.time.format("%Y"),
+    bisectDate = d3.bisector(function(d) { return d.date; }).left;
+
+// Set the ranges
+var x = d3.time.scale().range([0, width]);
+var y = d3.scale.linear().range([height, 0]);
+
+// Define the axes
+var xAxis = d3.svg.axis().scale(x)
+    .orient("bottom").ticks(5);
+
+var yAxis = d3.svg.axis().scale(y)
+    .orient("left").ticks(5);
+
+// Define the line
+var valueline = d3.svg.line()
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.value); });
+    
+
+var lineSvg = svgMaj.append("g"); 
+
+var focus = svgMaj.append("g") 
+    .style("display", "none");
+
+// Get the data
+d3.csv("bar-data.csv", function(error, data) {
+    data.forEach(function(d) {
+        d.date = parseDate(d.date);
+        d.value = +d.value;
+    });
+	
+	var newdata = data.filter(function(d, i) { if(d.countryName == Selcountry && d.major == newData) return d;})
+	
+	//console.log(newdata);
+	
+	data = newdata;
+
+    // Scale the range of the data
+    x.domain(d3.extent(data, function(d) { return d.date; }));
+    y.domain([0, d3.max(data, function(d) { return d.value; })]);
+
+    // Add the valueline path.
+    lineSvg.append("path")
+        .attr("class", "line")
+        .attr("d", valueline(data[0].value))
+		.transition()
+		.duration(1000)
+		.attrTween('d', pathTween);
+		
+	function pathTween() {
+        var interpolate = d3.scale.quantile()
+                .domain([0,1])
+                .range(d3.range(1, data.length + 1));
+        return function(t) {
+            return valueline(data.slice(0, interpolate(t)));
+        };
+    }
+		
+	
+	
+	console.log(data[0].value);
+
+    // Add the X Axis
+    svgMaj.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+    // Add the Y Axis
+    svgMaj.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+
+   // append the x line
+    focus.append("line")
+        .attr("class", "x")
+        .style("stroke", "blue")
+        .style("stroke-dasharray", "3,3")
+        .style("opacity", 0.5)
+        .attr("y1", 0)
+        .attr("y2", height);
+
+    // append the y line
+    focus.append("line")
+        .attr("class", "y")
+        .style("stroke", "blue")
+        .style("stroke-dasharray", "3,3")
+        .style("opacity", 0.5)
+        .attr("x1", width)
+        .attr("x2", width);
+
+    // append the circle at the intersection
+    focus.append("circle")
+        .attr("class", "y")
+        .style("fill", "none")
+        .style("stroke", "blue")
+        .attr("r", 4);
+
+    // place the value at the intersection
+    focus.append("text")
+        .attr("class", "y1")
+        .style("stroke", "white")
+        .style("stroke-width", "3.5px")
+        .style("opacity", 0.8)
+        .attr("dx", 8)
+        .attr("dy", "-.3em");
+    focus.append("text")
+        .attr("class", "y2")
+        .attr("dx", 8)
+        .attr("dy", "-.3em");
+
+    // place the date at the intersection
+    focus.append("text")
+        .attr("class", "y3")
+        .style("stroke", "white")
+        .style("stroke-width", "3.5px")
+        .style("opacity", 0.8)
+        .attr("dx", 8)
+        .attr("dy", "1em");
+    focus.append("text")
+        .attr("class", "y4")
+        .attr("dx", 8)
+        .attr("dy", "1em");
+    
+    // append the rectangle to capture mouse
+    svgMaj.append("rect")
+        .attr("width", width)
+        .attr("height", height)
+        .style("fill", "none")
+        .style("pointer-events", "all")
+        .on("mouseover", function() { focus.style("display", null); })
+        .on("mouseout", function() { focus.style("display", "none"); })
+        .on("mousemove", mousemove);
+
+    function mousemove() {
+		var x0 = x.invert(d3.mouse(this)[0]),
+		    i = bisectDate(data, x0, 1),
+		    d0 = data[i - 1],
+		    d1 = data[i],
+		    d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+
+		focus.select("circle.y")
+		    .attr("transform",
+		          "translate(" + x(d.date) + "," +
+		                         y(d.value) + ")");
+
+		focus.select("text.y1")
+		    .attr("transform",
+		          "translate(" + x(d.date-50) + "," +
+		                         y(d.value) + ")")
+		    .text(d.value);
+
+		focus.select("text.y2")
+		    .attr("transform",
+		          "translate(" + x(d.date) + "," +
+		                         y(d.value) + ")")
+		    .text(d.value);
+
+		focus.select("text.y3")
+		    .attr("transform",
+		          "translate(" + x(d.date) + "," +
+		                         y(d.value) + ")")
+		    .text(formatDate(d.date));
+
+		focus.select("text.y4")
+		    .attr("transform",
+		          "translate(" + x(d.date) + "," +
+		                         y(d.value) + ")")
+		    .text(formatDate(d.date));
+
+		focus.select(".x")
+		    .attr("transform",
+		          "translate(" + x(d.date) + "," +
+		                         y(d.value) + ")")
+		               .attr("y2", height - y(d.value));
+
+		focus.select(".y")
+		    .attr("transform",
+		          "translate(" + width * -1 + "," +
+		                         y(d.value) + ")")
+		               .attr("x2", width + width);
+	}
+
+});
+
+}
+
+updateBar.lineChart = lineChart;
+}
+function favMajor()
+	{
+		var newData = d3.select("#tagsname").text();
+		updateBar(newData);
+	}
+
+ 
+</script>
+
+</body>
