@@ -3,6 +3,13 @@
 <title>Final Project</title>
 <style>
 
+#container1 {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative;
+	margin: 0 auto;
+}
   #wrapper {
   border: 1px #e4e4e4 solid;
   padding: 20px;
@@ -19,7 +26,9 @@
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   background-color: #fff;
-  width:1250px;
+  width:1100px;
+  height:750px;
+  position: relative;
 }
 
 body { 
@@ -43,7 +52,7 @@ body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #86C9E9;
+    background-color: #3e8e41;
 }
 
 .dropdown {
@@ -72,171 +81,227 @@ body {
 
 .show {display:block;}
 
-.axis {
-	  font: 10px sans-serif;
-	}
 
-	.axis path,
-	.axis line {
-	  fill: none;
-	  stroke: #000;
-	  shape-rendering: crispEdges;
-	}
-
-}
-	
 </style>
 <body >
 
-<div id="wrapper" class="container">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+ <div id="wrapper" class="container">
 <div class="row">
         <div class="col-md-4">
-<img class="img-responsive"  src="worldcup.jpg" alt="ODU"style="width:280px;height:220px;">
+<img class="img-responsive"  src="worldcup.jpg" alt="ODU"style="width:220px;height:220px;">
         </div>
        
       <h1 style ="color:steelblue">World cup statisticss</h1>
    
         </div>
      <br>
- <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Select Year</button>
-    <div id="myDropdown" class="dropdown-content">
-      <select id="select-key" class="three columns">
-          <option value="urban" selected="selected">1930</option>
-          <option value="agriculture">1934</option>
-          <option value="forest">1942</option>
-          <option value="unproductive">1946</option>
+<div class="container">
+      <div class="row">
+        <h3 class="nine columns">Select Year</h3>
+        <select id="select-key" onchange=goto()>
+		  <option selected="selected">Years</option>
+          <option value="1930">1930</option>
+          <option value="1934">1934</option>
+          <option value="1942">1942</option>
+          <option value="1946">1946</option>
         </select>
-    </div>
-  </div>
+      </div>
+
+<br></br>
+
+ <div id="wrapper2" class="container" align="auto"  style="position: relative;" > 
+<div id="container1" class="container"  >
+</div>
+
+
+<br></br>
+
+
+
   
-  <br></br>
-  <br></br>
   
 
 
+
+<link href="nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="nv.d3.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-
-<div class="index">
- <iframe sandbox="allow-popups allow-scripts allow-forms allow-same-origin" src="worldmap.html" marginwidth="0" marginheight="0" height="1000" width="1255" scrolling="no"> 
- </iframe>
- </div>
-  
+      
+ 	<script>
 	
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
-	<script src="datamaps.world.min.js"></script>	
-	<script>
-		  /* When the user clicks on the button, 
-			toggle between hiding and showing the dropdown content */
-		function myFunction() {
-			document.getElementById("myDropdown").classList.toggle("show");
-		}
+	function goto(){
+		document.getElementById('container1').innerHTML = '';
+		var selection = document.getElementById("select-key").value;
+		   //basic map config with custom fills, mercator projection
+		
+		if (selection == 1930){
+			var map = new Datamap({
+				scope: 'world',
+				element: document.getElementById('container1'),
+				projection: 'mercator',
+				height: 700,
+				fills: {
+				  defaultFill: '#A4CDDD',
+				  lt50: '6F88C6',
+				  first: '#F5D233',
+				  second: '#6E7C81',
+				  third: '#9A7931'
+				},
+				
+				data: {
+				  ARG: {fillKey: 'second' },
+				  URY: {fillKey: 'first' },
+				  USA: {fillKey: 'third' },
+				  SVN: {fillKey: 'lt50' },
+				  BRA: {fillKey: 'lt50' },
+				  CHL: {fillKey: 'lt50' },
+				  FRA: {fillKey: 'lt50' },
+				  MEX: {fillKey: 'lt50' },
+				  ROU: {fillKey: 'lt50' },
+				  PRY: {fillKey: 'lt50' },
+				  PER: {fillKey: 'lt50' },
+				  BEL: {fillKey: 'lt50' },
+				  BOL: {fillKey: 'lt50' }
 
-		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-			if (!event.target.matches('.dropbtn')) {
+				}
+			  })
+			}
+			
+		else if (selection == 1934){
+			var map = new Datamap({
+				scope: 'world',
+				element: document.getElementById('container1'),
+				projection: 'mercator',
+				height: 700,
+				fills: {
+				  defaultFill: '#A4CDDD',
+				  lt50: '6F88C6',
+				  first: '#F5D233',
+				  second: '#6E7C81',
+				  third: '#9A7931'
+				},
+				
+				data: {
+				  ARG: {fillKey: 'second' },
+				  URY: {fillKey: 'first' },
+				  USA: {fillKey: 'third' },
+				  SVN: {fillKey: 'lt50' },
+				  BRA: {fillKey: 'lt50' },
+				  CHL: {fillKey: 'first' },
+				  FRA: {fillKey: 'lt50' },
+				  MEX: {fillKey: 'first' },
+				  ROU: {fillKey: 'lt50' },
+				  PRY: {fillKey: 'lt50' },
+				  PER: {fillKey: 'first' },
+				  BEL: {fillKey: 'lt50' },
+				  BOL: {fillKey: 'lt50' }
 
-				var dropdowns = document.getElementsByClassName("dropdown-content");
-				var i;
-				for (i = 0; i < dropdowns.length; i++) {
-					var openDropdown = dropdowns[i];
-					if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-					}
+				}
+			  })
+	
+	}
+}		  
+	</script>
+     <script>
+      /* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+	function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
 				}
 			}
 		}
-		 
-		 </script>
-		 
-<svg width="960" height="500"></svg>	 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-
-var svg = d3.select("svg"),
-    margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = +svg.attr("width") - margin.left - margin.right,
-    height = +svg.attr("height") - margin.top - margin.bottom,
-    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-var x = d3.scaleBand()
-    .rangeRound([0, width])
-    .paddingInner(0.1)
-    .align(0.1);
-
-var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
-
-var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-
-d3.csv("data.csv", function(d, i, columns) {
-  for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
-  d.total = t;
-  return d;
-}, function(error, data) {
-  if (error) throw error;
-
-  var keys = data.columns.slice(1);
-
-  data.sort(function(a, b) { return b.total - a.total; });
-  x.domain(data.map(function(d) { return d.State; }));
-  y.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
-  z.domain(keys);
-
-  g.append("g")
-    .selectAll("g")
-    .data(d3.stack().keys(keys)(data))
-    .enter().append("g")
-      .attr("fill", function(d) { return z(d.key); })
-    .selectAll("rect")
-    .data(function(d) { return d; })
-    .enter().append("rect")
-      .attr("x", function(d) { return x(d.data.State); })
-      .attr("y", function(d) { return y(d[1]); })
-      .attr("height", function(d) { return y(d[0]) - y(d[1]); })
-      .attr("width", x.bandwidth());
-
-  g.append("g")
-      .attr("class", "axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
-
-  g.append("g")
-      .attr("class", "axis")
-      .call(d3.axisLeft(y).ticks(null, "s"))
-    .append("text")
-      .attr("x", 2)
-      .attr("y", y(y.ticks().pop()) + 0.5)
-      .attr("dy", "0.32em")
-      .attr("fill", "#000")
-      .attr("font-weight", "bold")
-      .attr("text-anchor", "start")
-      .text("Population");
-
-  var legend = g.append("g")
-      .attr("font-family", "sans-serif")
-      .attr("font-size", 10)
-      .attr("text-anchor", "end")
-    .selectAll("g")
-    .data(keys.slice().reverse())
-    .enter().append("g")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-  legend.append("rect")
-      .attr("x", width - 19)
-      .attr("width", 19)
-      .attr("height", 19)
-      .attr("fill", z);
-
-  legend.append("text")
-      .attr("x", width - 24)
-      .attr("y", 9.5)
-      .attr("dy", "0.32em")
-      .text(function(d) { return d; });
-});
-
-</script>
+	}
 	 
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 700,
+        fills: {
+          defaultFill: '#A4CDDD',
+          lt50: '6F88C6',
+          first: '#F5D233',
+		  second: '#6E7C81',
+		  third: '#9A7931'
+        },
+        
+        data: {
+          ARG: {fillKey: 'second' },
+          URY: {fillKey: 'first' },
+          USA: {fillKey: 'third' },
+          SVN: {fillKey: 'lt50' },
+          BRA: {fillKey: 'lt50' },
+          CHL: {fillKey: 'lt50' },
+          FRA: {fillKey: 'lt50' },
+          MEX: {fillKey: 'lt50' },
+          ROU: {fillKey: 'lt50' },
+		  PRY: {fillKey: 'lt50' },
+		  BER: {fillKey: 'lt50' },
+		  BEL: {fillKey: 'lt50' },
+		  BOL: {fillKey: 'lt50' }
+
+        }
+      })
+      
+      
+      //sample of the arc plugin
+    /*map.arc([
+       {
+        origin: {
+            latitude: 40.639722,
+            longitude: 73.778889
+        },
+        destination: {
+            latitude: 37.618889,
+            longitude: -122.375
+        }
+      },
+      {
+          origin: {
+              latitude: 30.194444,
+              longitude: -97.67
+          },
+          destination: {
+              latitude: 25.793333,
+              longitude: -0.290556
+          }
+      }
+      ], {strokeWidth: 2});*/
+       
+      
+       //bubbles, custom popup on hover template
+     map.bubbles([
+       {name: 'First Place', latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
+       {name: 'Second Place', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
+       {name: 'Third Place', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
+
+     ], {
+       popupTemplate: function(geo, data) {
+         return "<div class='hoverinfo'>It is " + data.name + "</div>";
+       }
+     });
+     </script>
 </body>
