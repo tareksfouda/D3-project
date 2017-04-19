@@ -294,7 +294,11 @@ var country = svg.selectAll(".country").data(countries);
 	
 	
 
-
+function favMajor()
+	{
+		var newData = d3.select("#tagsname").text();
+		updateBar(newData);
+	}
 
 
 </script>
