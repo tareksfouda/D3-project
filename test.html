@@ -2,8 +2,112 @@
 <meta charset="utf-8">
 <title>Final Project</title>
 <style>
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 800px;
+  height: 500px;
+}
 
-#container1 {
+svg {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
+
+text{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.toolTip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+.legend {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 60%;
+}
+
+rect {
+    stroke-width: 2;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path{
+  fill: none;
+  stroke: #000;
+}
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis .tick line {
+  stroke-width: 1;
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+.axisHorizontal path{
+  fill: none;
+}
+
+.axisHorizontal line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axisHorizontal .tick line {
+  stroke-width: 1;
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+.bar {
+  fill: steelblue;
+  fill-opacity: .9;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#worldmap {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative;
+	margin: 0 auto;
+}
+#groupbarchart {
+float:left;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative;
+	margin: 0 auto;
+}
+#stackedbar {
+float:left;
     width: auto;
     height: auto;
     padding: 10px;
@@ -16,7 +120,8 @@
   border-radius: 10px;
   box-shadow: 0 0 100px #ccc;
   background-color: #fff;
-  width:1300px;
+  width:1500px;
+  overflow:hidden;
 }
 
 
@@ -88,6 +193,11 @@ body {
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+  
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="datamaps.world.min.js"></script>	
+
  <div id="wrapper" class="container">
 <div class="row">
         <div class="col-md-4">
@@ -128,12 +238,17 @@ body {
 
 <br></br>
 
- <div id="wrapper2" class="container" align="auto"  style="position: relative;" > 
-<div id="container1" class="container"  >
+ <div id="wrapper2" class="container"  > 
+<div id="worldmap" class="container"  >
+</div>
 </div>
 
+<div id="groupbarchart" class="container">
+</div>
 
-<br></br>
+<div id="stackedbar" class="container">
+</div>
+
 
 
 
@@ -154,16 +269,16 @@ body {
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       
 
-	
+	<script>
 	function goto(){
-		document.getElementById('container1').innerHTML = '';
+		document.getElementById('worldmap').innerHTML = '';
 		var selection = document.getElementById("select-key").value;
 		   //basic map config with custom fills, mercator projection
 		
 		if (selection == 1930){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -196,7 +311,7 @@ body {
 		else if (selection == 1934){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -229,7 +344,7 @@ body {
 			else if (selection == 1938){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -262,7 +377,7 @@ body {
 			else if (selection == 1950){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -295,7 +410,7 @@ body {
 			else if (selection == 1954){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -328,7 +443,7 @@ body {
 			else if (selection == 1958){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -361,7 +476,7 @@ body {
 			else if (selection == 1962){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -394,7 +509,7 @@ body {
 			else if (selection == 1966){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -427,7 +542,7 @@ body {
 			else if (selection == 1970){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -460,7 +575,7 @@ body {
 			else if (selection == 1974){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -493,7 +608,7 @@ body {
 			else if (selection == 1978){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -526,7 +641,7 @@ body {
 			else if (selection == 1982){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -559,7 +674,7 @@ body {
 				else if (selection == 1986){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -592,7 +707,7 @@ body {
 				else if (selection == 1990){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -625,7 +740,7 @@ body {
 				else if (selection == 1994){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -658,7 +773,7 @@ body {
 				else if (selection == 1998){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -691,7 +806,7 @@ body {
 				else if (selection == 2002){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -724,7 +839,7 @@ body {
 				else if (selection == 2006){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -757,7 +872,7 @@ body {
 				else if (selection == 2010){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -790,7 +905,7 @@ body {
 				else if (selection == 2014){
 			var map = new Datamap({
 				scope: 'world',
-				element: document.getElementById('container1'),
+				element: document.getElementById('worldmap'),
 				projection: 'mercator',
 				height: 700,
 				fills: {
@@ -849,7 +964,7 @@ body {
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
         scope: 'world',
-        element: document.getElementById('container1'),
+        element: document.getElementById('worldmap'),
         projection: 'mercator',
         height: 700,
         fills: {
@@ -879,4 +994,403 @@ body {
       });
       
      </script>
+	 
+	 
+	 <!-- jsjsjsjs -->
+	 
+	 <script>
+
+
+var dataset;
+d3.json("./WorldCupStatistics1930to2014.json", function(error, data)
+{
+	dataset = data;
+	//console.log('filter:', dataset);
+});
+
+function filterData(dataset, year)
+{
+	var filteredData = [];
+	
+	for(var i=0; i<dataset.length; i++)
+	{
+		if(dataset[i].Year == year )
+		{
+			filteredData.push(dataset[i]);
+		}
+	}
+
+	return filteredData;
+}
+
+
+function plotGroup(dataset)
+{
+
+
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/10), 
+			right: (parseInt(d3.select('body').style('width'), 10)/10), 
+			bottom: (parseInt(d3.select('body').style('width'), 10)/10), 
+			left: (parseInt(d3.select('body').style('width'), 10)/20)},
+		width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
+		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+
+	var x0 = d3.scale.ordinal()
+		.rangeRoundBands([0, width], .2);
+
+	var x1 = d3.scale.ordinal();
+
+	var y = d3.scale.linear()
+		.range([height, 0]);
+
+	var colorRange = d3.scale.category20();
+	var color = d3.scale.ordinal()
+		.range(colorRange.range());
+
+	var xAxis = d3.svg.axis()
+		.scale(x0)
+		.orient("bottom");
+
+	var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left")
+		.tickFormat(d3.format("1"));
+
+	var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
+
+
+	var svg = d3.select("#groupbarchart").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+		
+	var options = d3.keys(dataset[0]).filter(function(key) { return key == "GoalsFor" || key == "GoalsAgainst"; });
+
+	dataset.forEach(function(d) {
+		d.valores = options.map(function(name) { return {name: name, value: +d[name]}; });
+	});
+
+	x0.domain(dataset.map(function(d) { return d.Team; }));
+	x1.domain(options).rangeRoundBands([0, x0.rangeBand()]);
+	y.domain([0, d3.max(dataset, function(d) { return d3.max(d.valores, function(d) { return d.value; }); })]);
+	
+
+	
+	svg.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxis)
+		.selectAll("text")
+			.attr("y", 0)
+			.attr("x", 9)
+			.attr("dx", "-1.6em")
+            .attr("dy", "1.4em")
+			.attr("transform", "rotate(-40)")
+			.style("text-anchor", "end");
+
+	svg.append("g")
+		.attr("class", "y axis")
+		.call(yAxis)
+		.append("text")
+		.attr("transform", "rotate(-90)")
+		.attr("y", 7)
+		.attr("dx", "-12em")
+		.attr("dy", "-4em")
+		.style("text-anchor", "end")
+		.text("Goals");
+
+	var bar = svg.selectAll(".bar")
+		.data(dataset)
+		.enter().append("g")
+		.attr("class", "rect")
+		.attr("transform", function(d) { return "translate(" + x0(d.Team) + ",0)"; });
+
+	bar.selectAll("rect")
+		.data(function(d) { return d.valores; })
+		.enter().append("rect")
+		.attr("width", x1.rangeBand())
+		.attr("x", function(d) { return x1(d.name); })
+		.attr("y", function(d) { return y(d.value); })
+		.attr("value", function(d){return d.name;})
+		.attr("height", function(d) { return height - y(d.value); })
+		.style("fill", function(d) { return color(d.name); });
+
+	bar.on("mousemove", function(d){
+			divTooltip.style("left", d3.event.pageX+10+"px");
+			divTooltip.style("top", d3.event.pageY-25+"px");
+			divTooltip.style("display", "inline-block");
+			var x = d3.event.pageX, y = d3.event.pageY
+			var elements = document.querySelectorAll(':hover');
+			l = elements.length
+			l = l-1
+			elementData = elements[l].__data__
+			divTooltip.html((d.Team)+"<br>"+elementData.name+"<br>"+elementData.value);
+		});
+	
+	bar.on("mouseout", function(d){
+			divTooltip.style("display", "none");
+		});
+
+
+	var legend = svg.selectAll(".legend")
+		.data(options.slice())
+		.enter().append("g")
+		.attr("class", "legend")
+		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+	legend.append("rect")
+		.attr("x", width - 18)
+		.attr("width", 20)
+		.attr("height", 18)
+		.style("fill", color);
+
+	legend.append("text")
+		.attr("x", width - 24)
+		.attr("y", 9)
+		.attr("dy", ".35em")
+		.style("text-anchor", "end")
+		.text(function(d) { return d; });
+    
+
+}
+
+
+function stackedBar(dataset)
+{
+
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/10), 
+			right: (parseInt(d3.select('body').style('width'), 10)/10), 
+			bottom: (parseInt(d3.select('body').style('width'), 10)/10), 
+			left: (parseInt(d3.select('body').style('width'), 10)/20)},
+		width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
+		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+
+	var x = d3.scale.ordinal()
+	.rangeRoundBands([0, width], .1);
+
+	var y = d3.scale.linear()
+	.rangeRound([height, 0]);
+
+	var color = d3.scale.ordinal()
+	.range(["#6AC675","#C6AF6A", "#B73838"]);
+
+	var xAxis = d3.svg.axis()
+	.scale(x)
+	.orient("bottom");
+
+	var yAxis = d3.svg.axis()
+	.scale(y)
+	.orient("left")
+	.tickFormat(d3.format("1"));
+
+	var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
+
+	var svg = d3.select("#stackedbar").append("svg")
+	.attr("width", width + margin.left + margin.right)
+	.attr("height", height + margin.top + margin.bottom)
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	var data = dataset;
+
+	color.domain(d3.keys(data[0]).filter(function(key) { return key == "Won" || key == "Drawn" || key == "Lost"; }));
+
+	data.forEach(function(d) {
+		var y0 = 0;
+		d.matches = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+		d.total = d.matches[d.matches.length - 1].y1;
+	});
+
+	data.sort(function(a, b) { return b.total - a.total; });
+
+	x.domain(data.map(function(d) { return d.Team; }));
+	y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+	svg.append("g")
+	  .attr("class", "x axis")
+	  .attr("transform", "translate(0," + height + ")")
+	  .call(xAxis)
+	  .selectAll("text")
+			.attr("y", 0)
+			.attr("x", 9)
+			.attr("dx", "-1.6em")
+            .attr("dy", "1.4em")
+			.attr("transform", "rotate(-40)")
+			.style("text-anchor", "end");
+
+
+	svg.append("g")
+	  .attr("class", "y axis")
+	  .call(yAxis)
+	  .append("text")
+	  .attr("transform", "rotate(-90)")
+	  .attr("y", 6)
+	  .attr("dx", "-12em")
+	  .attr("dy", "-4em")
+	  .style("text-anchor", "end")
+	  .text("Matches");
+
+	var team = svg.selectAll(".team")
+	  .data(data)
+	  .enter().append("g")
+	  .attr("class", "g")
+	  .attr("transform", function(d) { return "translate(" + x(d.Team) + ",0)"; });
+
+	team.selectAll("rect")
+	  .data(function(d) { return d.matches; })
+	  .enter().append("rect")
+	  .attr("width", x.rangeBand())
+	  .attr("y", function(d) { return y(d.y1); })
+	  .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+	  .style("fill", function(d) { return color(d.name); });
+
+	  
+	team.on("mousemove", function(d){
+			divTooltip.style("left", d3.event.pageX+10+"px");
+			divTooltip.style("top", d3.event.pageY-25+"px");
+			divTooltip.style("display", "inline-block");
+			var x = d3.event.pageX, y = d3.event.pageY
+			var elements = document.querySelectorAll(':hover');
+			l = elements.length
+			l = l-1
+			elementData = elements[l].__data__
+			divTooltip.html((d.Team)+"<br>"+elementData.name+"<br>"+matchtypes(d));
+			});
+
+			
+	function matchtypes(d){ 
+		if (elementData.name == "Won")
+		{
+			return d.Won;	
+		}
+		else if (elementData.name == "Drawn")
+		{
+			return d.Drawn;
+		}
+		else if (elementData.name == "Lost")
+		{
+			return d.Lost;
+		}			
+	};
+
+			
+	team.on("mouseout", function(d){
+			divTooltip.style("display", "none");
+		});
+	  
+	  
+	var legend = svg.selectAll(".legend")
+	  .data(color.domain().slice().reverse())
+	.enter().append("g")
+	  .attr("class", "legend")
+	  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+	legend.append("rect")
+	  .attr("x", width - 18)
+	  .attr("width", 18)
+	  .attr("height", 18)
+	  .style("fill", color);
+
+	legend.append("text")
+	  .attr("x", width - 24)
+	  .attr("y", 9)
+	  .attr("dy", ".35em")
+	  .style("text-anchor", "end")
+	  .text(function(d) { return d; });
+
+}
+
+function worldMap(selection)
+{
+
+	var year = selection;
+
+	if (year == 1930){
+		var map = new Datamap({
+			scope: 'world',
+			element: document.getElementById('worldmap'),
+			projection: 'mercator',
+			height: 700,
+			fills: {
+			  defaultFill: '#A4CDDD',
+			  lt50: '6F88C6',
+			  first: '#F5D233',
+			  second: '#6E7C81',
+			  third: '#9A7931'
+			},
+			
+			data: {
+			  ARG: {fillKey: 'second' },
+			  URY: {fillKey: 'first' },
+			  USA: {fillKey: 'third' },
+			  SVN: {fillKey: 'lt50' },
+			  BRA: {fillKey: 'lt50' },
+			  CHL: {fillKey: 'lt50' },
+			  FRA: {fillKey: 'lt50' },
+			  MEX: {fillKey: 'lt50' },
+			  ROU: {fillKey: 'lt50' },
+			  PRY: {fillKey: 'lt50' },
+			  PER: {fillKey: 'lt50' },
+			  BEL: {fillKey: 'lt50' },
+			  BOL: {fillKey: 'lt50' }
+
+			}
+		  })
+		}
+		
+	else if (year == 1934){
+		var map = new Datamap({
+			scope: 'world',
+			element: document.getElementById('worldmap'),
+			projection: 'mercator',
+			height: 700,
+			fills: {
+			  defaultFill: '#A4CDDD',
+			  lt50: '6F88C6',
+			  first: '#F5D233',
+			  second: '#6E7C81',
+			  third: '#9A7931'
+			},
+			
+			data: {
+			  ARG: {fillKey: 'second' },
+			  URY: {fillKey: 'first' },
+			  USA: {fillKey: 'third' },
+			  SVN: {fillKey: 'lt50' },
+			  BRA: {fillKey: 'lt50' },
+			  CHL: {fillKey: 'first' },
+			  FRA: {fillKey: 'lt50' },
+			  MEX: {fillKey: 'first' },
+			  ROU: {fillKey: 'lt50' },
+			  PRY: {fillKey: 'lt50' },
+			  PER: {fillKey: 'first' },
+			  BEL: {fillKey: 'lt50' },
+			  BOL: {fillKey: 'lt50' }
+
+			}
+		  })
+
+	}
+
+}
+
+function goto()
+	{
+		
+		var selection = document.getElementById("select-key").value;
+		   //basic map config with custom fills, mercator projection
+		   
+		document.getElementById('groupbarchart').innerHTML = '';
+		document.getElementById('stackedbar').innerHTML = '';
+		document.getElementById('worldmap').innerHTML = '';
+		
+		var dataToPlot = filterData(dataset, selection);
+		worldMap(selection);
+		plotGroup(dataToPlot);
+		stackedBar(dataToPlot);
+	
+}	
+</script>
+
 </body>
