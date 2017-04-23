@@ -976,19 +976,6 @@ body {
         },
         
         data: {
-          ARG: {fillKey: 'second' },
-          URY: {fillKey: 'first' },
-          USA: {fillKey: 'third' },
-          SVN: {fillKey: 'lt50' },
-          BRA: {fillKey: 'lt50' },
-          CHL: {fillKey: 'lt50' },
-          FRA: {fillKey: 'lt50' },
-          MEX: {fillKey: 'lt50' },
-          ROU: {fillKey: 'lt50' },
-		  PRY: {fillKey: 'lt50' },
-		  BER: {fillKey: 'lt50' },
-		  BEL: {fillKey: 'lt50' },
-		  BOL: {fillKey: 'lt50' }
 
         }
       });
@@ -1301,12 +1288,24 @@ function stackedBar(dataset)
 
 }
 
-function worldMap(selection)
-{
+function worldMap(datasett)
+{ // dataset is array of objects that have all the required data
 
-	var year = selection;
+	//var year = selection;
 
-	if (year == 1930){
+    datasett.forEach(function(item){ //
+        // item example value ["USA", 70]
+        var iso = item.ISO,
+                value =  item.TopThree ;
+					console.log(iso);
+					console.log(value);
+					if ( value == 1) {dataset[iso] = { numberOfThings: value, fillColor: "#EDE60E" };} // yellow first
+					if ( value == 2) {dataset[iso] = { numberOfThings: value, fillColor: "#0E44ED" };} // blue second
+					if ( value == 3) {dataset[iso] = { numberOfThings: value, fillColor: "#ED0E4E" };} // red third
+					if ( value == 0) {dataset[iso] = { numberOfThings: value, fillColor: "#6E7C81" };}
+    });
+
+//	console.log(data[0].Team);
 		var map = new Datamap({
 			scope: 'world',
 			element: document.getElementById('worldmap'),
@@ -1320,58 +1319,44 @@ function worldMap(selection)
 			  third: '#9A7931'
 			},
 			
-			data: {
-			  ARG: {fillKey: 'second' },
-			  URY: {fillKey: 'first' },
-			  USA: {fillKey: 'third' },
-			  SVN: {fillKey: 'lt50' },
-			  BRA: {fillKey: 'lt50' },
-			  CHL: {fillKey: 'lt50' },
-			  FRA: {fillKey: 'lt50' },
-			  MEX: {fillKey: 'lt50' },
-			  ROU: {fillKey: 'lt50' },
-			  PRY: {fillKey: 'lt50' },
-			  PER: {fillKey: 'lt50' },
-			  BEL: {fillKey: 'lt50' },
-			  BOL: {fillKey: 'lt50' }
+			data: dataset,
+			        geographyConfig: {
+            borderColor: '#DEDEDE',
+            highlightBorderWidth: 2,
+            // don't change color on mouse hover
+            highlightFillColor: function(geo) {
+                return geo['fillColor'] || '#A4CDDD' ;
+            },
+            // only change border
+            highlightBorderColor: '#B7B7B7',
+            // show desired information in tooltip
+            popupTemplate: function(geo, data) {
+                // don't show tooltip if country don't present in dataset
+                if (!data) { return ; }
+                // tooltip content
+				if (data.numberOfThings == 1){return ['<div class="hoverinfo">',
+                    '<strong>', geo.properties.name, '</strong>',
+                    '<br>This country is in the : <strong>', data.numberOfThings, 'st place.</strong>',
+                    '</div>'].join('');}
+				if (data.numberOfThings == 2){return ['<div class="hoverinfo">',
+                    '<strong>', geo.properties.name, '</strong>',
+                    '<br>This country is in the : <strong>', data.numberOfThings, 'nd place.</strong>',
+                    '</div>'].join('');}
+				if (data.numberOfThings == 3){return ['<div class="hoverinfo">',
+                    '<strong>', geo.properties.name, '</strong>',
+                    '<br>This country is in the : <strong>', data.numberOfThings, 'rd place.</strong>',
+                    '</div>'].join('');}
+				if (data.numberOfThings == 0){return ['<div class="hoverinfo">',
+                    '<strong>', geo.properties.name, '</strong>',
+                    '<br>This country participated but was not among the top three. <strong>', '</strong>',
+                    '</div>'].join('');}
 
-			}
-		  })
-		}
+            }
+        }
+		  });
 		
-	else if (year == 1934){
-		var map = new Datamap({
-			scope: 'world',
-			element: document.getElementById('worldmap'),
-			projection: 'mercator',
-			height: 700,
-			fills: {
-			  defaultFill: '#A4CDDD',
-			  lt50: '6F88C6',
-			  first: '#F5D233',
-			  second: '#6E7C81',
-			  third: '#9A7931'
-			},
-			
-			data: {
-			  ARG: {fillKey: 'second' },
-			  URY: {fillKey: 'first' },
-			  USA: {fillKey: 'third' },
-			  SVN: {fillKey: 'lt50' },
-			  BRA: {fillKey: 'lt50' },
-			  CHL: {fillKey: 'first' },
-			  FRA: {fillKey: 'lt50' },
-			  MEX: {fillKey: 'first' },
-			  ROU: {fillKey: 'lt50' },
-			  PRY: {fillKey: 'lt50' },
-			  PER: {fillKey: 'first' },
-			  BEL: {fillKey: 'lt50' },
-			  BOL: {fillKey: 'lt50' }
+		
 
-			}
-		  })
-
-	}
 
 }
 
@@ -1386,10 +1371,10 @@ function goto()
 		document.getElementById('worldmap').innerHTML = '';
 		
 		var dataToPlot = filterData(dataset, selection);
-		worldMap(selection);
+		worldMap(dataToPlot);
 		plotGroup(dataToPlot);
 		stackedBar(dataToPlot);
-	
+	console.log(dataToPlot.length);// arrays of required data based on selection year.
 }	
 </script>
 
