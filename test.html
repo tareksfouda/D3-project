@@ -241,6 +241,8 @@ body {
           <option value="2010">2010</option>
           <option value="2014">2014</option>
         </select>
+		
+<div id="textDiv" style="color:Green; font-family:Calibri; font-size:22px; font-weight:bold"> <p>Please select a year to show the map</p> </div>
       </div>
 
 <br></br>
@@ -690,7 +692,11 @@ function worldMap(datasett)
 
 
 }
+function description(dataset){
+var count = dataset.length;
 
+document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count-1);
+}
 function goto()
 	{
 		
@@ -700,11 +706,13 @@ function goto()
 		document.getElementById('groupbarchart').innerHTML = '';
 		document.getElementById('stackedbar').innerHTML = '';
 		document.getElementById('worldmap').innerHTML = '';
+		document.getElementById('textDiv').innerHTML = '';
 		
 		var dataToPlot = filterData(dataset, selection);
 		worldMap(dataToPlot);
 		plotGroup(dataToPlot);
 		stackedBar(dataToPlot);
+		description(dataToPlot);
 	console.log(dataToPlot.length);// arrays of required data based on selection year.
 }	
 </script>
