@@ -625,9 +625,10 @@ function worldMap(datasett)
 { // dataset is array of objects that have all the required data
 
 	//var year = selection;
-
+		var dataset = {};
     datasett.forEach(function(item){ //
         // item example value ["USA", 70]
+			//	map.updateChoropleth(null, {reset: true});
         var iso = item.ISO,
                 value =  item.TopThree ;
 					console.log(iso);
@@ -638,6 +639,7 @@ function worldMap(datasett)
 					if ( value == 0) {dataset[iso] = { numberOfThings: value, fillColor: "#6E7C81" };}
     });
 
+
 //	console.log(data[0].Team);
 		var map = new Datamap({
 			scope: 'world',
@@ -645,11 +647,7 @@ function worldMap(datasett)
 			projection: 'mercator',
 			height: 700,
 			fills: {
-			  defaultFill: '#A4CDDD',
-			  lt50: '6F88C6',
-			  first: '#F5D233',
-			  second: '#6E7C81',
-			  third: '#9A7931'
+			  defaultFill: '#A4CDDD'
 			},
 			
 			data: dataset,
@@ -687,8 +685,8 @@ function worldMap(datasett)
             }
         }
 		  });
-		
-		
+
+
 
 
 }
@@ -707,7 +705,9 @@ function goto()
 		document.getElementById('stackedbar').innerHTML = '';
 		document.getElementById('worldmap').innerHTML = '';
 		document.getElementById('textDiv').innerHTML = '';
-		
+
+
+
 		var dataToPlot = filterData(dataset, selection);
 		worldMap(dataToPlot);
 		plotGroup(dataToPlot);
