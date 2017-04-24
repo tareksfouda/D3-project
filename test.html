@@ -2,6 +2,14 @@
 <meta charset="utf-8">
 <title>Final Project</title>
 <style>
+
+	.form-control
+{
+     width:auto !important;
+
+}
+} 
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 800px;
@@ -218,7 +226,7 @@ body {
 <div class="container">
       <div class="row">
         <h3 class="nine columns">Select Year</h3>
-        <select id="select-key" onchange=goto()>
+        <select id="select-key" class= "form-control" onchange=goto()>
 		  <option selected="selected">Years</option>
           <option value="1930">1930</option>
           <option value="1934">1934</option>
