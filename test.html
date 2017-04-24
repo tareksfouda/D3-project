@@ -95,7 +95,7 @@ text {
 div.wrap {
 
     width: 600px;
-	height: 1200px
+	height: 1300px
 	border:dashed 1px black;
 	position: relative;
 	clear: both;
@@ -273,27 +273,6 @@ body {
 
 
      <script>
-      /* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-	function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show");
-	}
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-		if (!event.target.matches('.dropbtn')) {
-
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-				}
-			}
-		}
-	}
-	 
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
         scope: 'world',
@@ -348,10 +327,10 @@ function plotGroup(dataset)
 {
 
 
-	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/40), 
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/20), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
 			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/40)},
+			left: (parseInt(d3.select('body').style('width'), 10)/20)},
 		width = parseInt(d3.select('body').style('width'), 9) - margin.left - margin.right,
 		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
@@ -479,10 +458,10 @@ function plotGroup(dataset)
 function stackedBar(dataset)
 {
 
-	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/40), 
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/20), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
 			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/40)},
+			left: (parseInt(d3.select('body').style('width'), 10)/20)},
 		width = parseInt(d3.select('body').style('width'), 9) - margin.left - margin.right,
 		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
 
