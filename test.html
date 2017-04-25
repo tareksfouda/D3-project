@@ -207,7 +207,12 @@ body {
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-  
+  <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" rel="stylesheet">
+  	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src ="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="datamaps.world.min.js"></script>	
@@ -215,15 +220,22 @@ body {
  <div id="wrapper" class="container">
 <div class="row">
         <div class="col-md-4">
-<img class="img-responsive"  src="worldcup.jpg" alt="ODU"style="width:220px;height:220px;">
+<img src="worldcup.jpg" style="width:220px;height:220px;">
         </div>
        
-      <h1 style ="color:steelblue">World cup statisticss</h1>
-   
+      <p style="font-size:70px;position:relative;font-family:Lato;">WorldCup statistics</p>
+        </div>
+		
+		
+		<div class="row">
+        <div class="col-md-4">
+        </div>
+       
+      <p id="info" style="font-size:30px;position:relative;font-family:Lato;"></p>
         </div>
      <br>
 <div class="container">
-      <div class="row">
+      <div >
         <h3 class="nine columns">Select Year</h3>
         <select id="select-key" class= "form-control" onchange=goto()>
 		  <option selected="selected">Years</option>
@@ -251,6 +263,9 @@ body {
 		
 <div id="textDiv" style="color:Green; font-family:Calibri; font-size:22px; font-weight:bold"> <p>Please select a year to show the map</p> </div>
       </div>
+
+			  <a href="#wrap" class="btn btn-default">Compare Countries performance in this year</a>
+
 
 <br></br>
 
@@ -312,6 +327,12 @@ d3.json("./WorldCupStatistics1930to2014.json", function(error, data)
 {
 	dataset = data;
 	//console.log('filter:', dataset);
+});
+var dataset2;
+d3.json("./WorldCupTournaments.json", function(error, data)
+{
+	dataset2 = data;
+	console.log( "hhuan" ,dataset2);
 });
 
 function filterData(dataset, year)
@@ -607,6 +628,7 @@ function stackedBar(dataset)
 
 }
 
+
 function worldMap(datasett)
 { // dataset is array of objects that have all the required data
 
@@ -616,13 +638,18 @@ function worldMap(datasett)
         // item example value ["USA", 70]
 			//	map.updateChoropleth(null, {reset: true});
         var iso = item.ISO,
-                value =  item.TopThree ;
+                value =  item.TopThree,
+					matches = item.Matches,
+						won = item.Won,
+						draw=item.Drawn,
+						lost=item.Lost,
+						goals=item.GoalsFor;
 					console.log(iso);
 					console.log(value);
-					if ( value == 1) {dataset[iso] = { numberOfThings: value, fillColor: "#EDE60E" };} // yellow first
-					if ( value == 2) {dataset[iso] = { numberOfThings: value, fillColor: "#0E44ED" };} // blue second
-					if ( value == 3) {dataset[iso] = { numberOfThings: value, fillColor: "#ED0E4E" };} // red third
-					if ( value == 0) {dataset[iso] = { numberOfThings: value, fillColor: "#6E7C81" };}
+					if ( value == 1) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#EDE60E" };} // yellow first
+					if ( value == 2) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals, matches: matches,numberOfThings: value, fillColor: "#0E44ED" };} // blue second
+					if ( value == 3) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#ED0E4E" };} // red third
+					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#6E7C81" };}
     });
 
 
@@ -637,6 +664,16 @@ function worldMap(datasett)
 			},
 			
 			data: dataset,
+			        done: function(map) {
+  
+          map.svg.selectAll('.datamaps-subunit').on('click', function(geo) {
+            var localData = map.options.data[geo.id]
+            if ( localData && localData.numberOfThings ) {
+              //function test(){alert(localData.matches);}
+			  test();
+            }
+          })
+        },
 			        geographyConfig: {
             borderColor: '#DEDEDE',
             highlightBorderWidth: 2,
@@ -649,23 +686,46 @@ function worldMap(datasett)
             // show desired information in tooltip
             popupTemplate: function(geo, data) {
                 // don't show tooltip if country don't present in dataset
-                if (!data) { return ; }
+                if (!data) { return ['<div class="hoverinfo">',
+                    '<strong>', geo.properties.name, '</strong>',
+					'<br>has not participated in this World Cup Championship<strong>',
+                    '</div>'].join('');}
                 // tooltip content
 				if (data.numberOfThings == 1){return ['<div class="hoverinfo">',
                     '<strong>', geo.properties.name, '</strong>',
-                    '<br>This country is in the : <strong>', data.numberOfThings, 'st place.</strong>',
+                    '<br><strong> This country is in the : ', data.numberOfThings, 'st place.</strong>',
+					'<br>Matches playes : <strong>', data.matches, ' matches.</strong>',
+					'<br>Won : <strong>', data.won, ' games.</strong>',
+					'<br>Drawn : <strong>', data.draw, ' games.</strong>',
+					'<br>Lost : <strong>', data.lost, ' matches.</strong>',
+					'<br>Scored : <strong>', data.goals, ' goals.</strong>',
                     '</div>'].join('');}
 				if (data.numberOfThings == 2){return ['<div class="hoverinfo">',
                     '<strong>', geo.properties.name, '</strong>',
-                    '<br>This country is in the : <strong>', data.numberOfThings, 'nd place.</strong>',
+                    '<br><strong> This country is in the : ', data.numberOfThings, 'nd place.</strong>',
+					'<br>Matches playes : <strong>', data.matches, ' matches.</strong>',
+					'<br>Won : <strong>', data.won, ' games.</strong>',
+					'<br>Drawn : <strong>', data.draw, ' games.</strong>',
+					'<br>Lost : <strong>', data.lost, ' matches.</strong>',
+					'<br>Scored : <strong>', data.goals, ' goals.</strong>',
                     '</div>'].join('');}
-				if (data.numberOfThings == 3){return ['<div class="hoverinfo">',
+				if (data.numberOfThings == 3){return ['<div class="hoverinfo"> ',
                     '<strong>', geo.properties.name, '</strong>',
-                    '<br>This country is in the : <strong>', data.numberOfThings, 'rd place.</strong>',
+                    '<br> <strong> This country is in the : ', data.numberOfThings, 'rd place.</strong>',
+					'<br>Matches playes : <strong>', data.matches, ' matches.</strong>',
+					'<br>Won : <strong>', data.won, ' games.</strong>',
+					'<br>Drawn : <strong>', data.draw, ' games.</strong>',
+					'<br>Lost : <strong>', data.lost, ' matches.</strong>',
+					'<br>Scored : <strong>', data.goals, ' goals.</strong>',
                     '</div>'].join('');}
 				if (data.numberOfThings == 0){return ['<div class="hoverinfo">',
                     '<strong>', geo.properties.name, '</strong>',
-                    '<br>This country participated but was not among the top three. <strong>', '</strong>',
+                    '<br><strong> This country participated but was not among the top three. ', '</strong>',
+					'<br>Matches playes : <strong>', data.matches, ' matches.</strong>',
+					'<br>Won : <strong>', data.won, ' games.</strong>',
+					'<br>Drawn : <strong>', data.draw, ' games.</strong>',
+					'<br>Lost : <strong>', data.lost, ' matches.</strong>',
+					'<br>Scored : <strong>', data.goals, ' goals.</strong>',
                     '</div>'].join('');}
 
             }
@@ -675,12 +735,17 @@ function worldMap(datasett)
 
 
 
+
 }
 function description(dataset){
 var count = dataset.length;
-
+var x = dataset2.length;
+console.log("jklsdjhdfjkldflk",x)
 document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count);
 }
+
+
+
 function goto()
 	{
 		
@@ -691,6 +756,7 @@ function goto()
 		document.getElementById('stackedbar').innerHTML = '';
 		document.getElementById('worldmap').innerHTML = '';
 		document.getElementById('textDiv').innerHTML = '';
+		document.getElementById('info').innerHTML = '';
 
 
 

@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.5.4/bootstrap-select.min.css"">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+
+
+</head>
 <style>
 
 body {
@@ -99,7 +109,7 @@ text {
 <div class="container">
       <div class="row">
         <h3 class="nine columns">Select Year</h3>
-        <select id="select-key" onchange=goto()>
+        <select id="select-key" onchange=goto() class="selectpicker" data-style="btn-primary">
 		  <option selected="selected">Years</option>
           <option value="1930">1930</option>
           <option value="1934">1934</option>
@@ -108,6 +118,11 @@ text {
         </select>
       </div>
 </div>
+
+<script  type="text/javascript">
+$(document).ready(function() {
+   $('.selectpicker').selectpicker();
+});</script>
 
 <div id="worldmap">
 </div>
