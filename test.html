@@ -370,6 +370,11 @@ body {
 
   map.arc( presidentialTrips, {strokeWidth: 2});
 
+  
+  
+  //-----------------------------
+  
+
 
      </script>
 	 
@@ -759,18 +764,97 @@ function worldMap(datasett)
 		x= getCountryForBubble();
 		y= getIsoForBubble();
 		console.log('yay',y);
-map.bubbles([
-  {
-    radius: 15,
-    centered: y,
-    country:x,
-    fillKey: 'Place'
-  }
-], {
-  popupTemplate: function(geo, dataw) {
-    return '<div class="hoverinfo">World cup fpr this year took place in ' +'' + dataw.country;
-  }
-});
+  map.addPlugin('pins', function(layer, data, options) {
+        var self = this,
+            fillData = this.options.fills,
+            svg = this.svg;
+
+        if (!data || (data && !data.slice)) {
+            throw "Datamaps Error - bubbles must be an array";
+        }
+
+        var bubbles = layer.selectAll('image.datamaps-pins').data(data, JSON.stringify);
+
+        bubbles.enter()
+            .append('image')
+            .attr('class', 'datamaps-pin')
+            .attr('xlink:href', 'https://img.clipartfest.com/b5f7aa11c04bde66e0ad8d4d80f34297_big-image-png-gps-location-icon-clipart_1911-2400.png')
+            .attr('height', 25)
+            .attr('width', 20)
+            .attr('x', function(datum) {
+            console.log('hey')
+            var latLng;
+            if (datumHasCoords(datum)) {
+                latLng = self.latLngToXY(datum.latitude, datum.longitude);
+				console.log('1');
+            } else if (datum.centered) {
+                latLng = self.path.centroid(svg.select('path.' + (datum.centered)).data()[0]);
+				latLng[0] = latLng[0]-12;
+				latLng[1] = latLng[1]-12;
+				console.log('2' , latLng);
+            }
+            if (latLng){ return latLng[0]; console.log('3' , latLng[0]);}
+        })
+            .attr('y', function(datum) {
+            var latLng;
+            if (datumHasCoords(datum)) {
+                latLng = self.latLngToXY(datum.latitude, datum.longitude);
+            } else if (datum.centered) {
+                latLng = self.path.centroid(svg.select('path.' + datum.centered).data()[0]);
+				latLng[0] = latLng[0]-20;
+				latLng[1] = latLng[1]-20;
+            }
+            if (latLng) return latLng[1];;
+        })
+
+            .on('mouseover', function(datum) {
+            console.log('mousover!');
+            var $this = d3.select(this);
+
+            if (options.popupOnHover) {
+                console.log('going', datum)
+                self.updatePopup($this, datum, options, svg);
+            }
+        })
+            .on('mouseout', function(datum) {
+            var $this = d3.select(this);
+
+            if (options.highlightOnHover) {
+                //reapply previous attributes
+                var previousAttributes = JSON.parse($this.attr('data-previousAttributes'));
+                for (var attr in previousAttributes) {
+                    $this.style(attr, previousAttributes[attr]);
+                }
+            }
+
+            d3.selectAll('.datamaps-hoverover').style('display', 'none');
+        })
+
+
+        bubbles.exit()
+            .transition()
+            .delay(options.exitDelay)
+            .attr("height", 0)
+            .remove();
+
+        function datumHasCoords(datum) {
+            return typeof datum !== 'undefined' && typeof datum.latitude !== 'undefined' && typeof datum.longitude !== 'undefined';
+        }
+
+    });
+
+//bubbles, custom popup on hover template
+    map.pins([{
+        name: x,
+        centered: y ,
+    }
+
+    ], {
+        popupOnHover: true,
+        popupTemplate: function(data) {
+            return "<div class='hoverinfo'> " + data.name + " hosted WorldCup this year</div>";
+        }
+    });
 }
 function description(dataset){
 var count = dataset.length;
