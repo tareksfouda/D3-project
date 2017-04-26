@@ -265,6 +265,111 @@ body {
         }
       });
 	  map.legend();
+	      var presidentialTrips = [
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 32.066667,
+                longitude: 34.783333 
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 19.433333,
+                longitude: -99.133333
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 9.933333,
+                longitude: -84.083333
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 54.597 ,
+                longitude: -5.93
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 52.516667,
+                longitude: 13.383333 
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 14.692778,
+                longitude: -17.446667
+            }
+        },
+        {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: -26.204444,
+                longitude: 28.045556
+            }
+        },
+                {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: -6.8,
+                longitude: 39.283333 
+            }
+        },
+                {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 59.329444,
+                longitude: 18.068611
+            }
+        },
+                {
+            origin: {
+                latitude: 38.895111,
+                longitude: -77.036667
+            },
+            destination: {
+                latitude: 59.95 ,
+                longitude: 30.3
+            }
+        }
+    ];
+
+  map.arc( presidentialTrips, {strokeWidth: 2});
+
 
      </script>
 	 
@@ -556,7 +661,8 @@ function worldMap(datasett)
           "Gold medal": '#EDE60E',
 		  "Silver medal": '#0E44ED',
 		 "Bronze medal": '#ED0E4E',
-		  Participated:  '#1DD8E1'
+		  Participated:  '#1DD8E1',
+		  "Place": '#CDC2C2'
 			},
 			
 			data: dataset,
@@ -627,6 +733,44 @@ function worldMap(datasett)
         }
 		  });
 		  map.legend();
+		  
+		function getCountryForBubble(){
+		var location;
+	var x = dataset2.length;
+		for(var i=0;i< dataset2.length;i++){
+			if(dataset2[i].Year == datasett[0].Year ){
+			location = dataset2[i].Place;
+			return location;
+								}
+					}
+		}
+
+		function getIsoForBubble(){
+		var location;
+	var x = dataset2.length;
+		for(var i=0;i< dataset2.length;i++){
+			if(dataset2[i].Year == datasett[0].Year ){
+			location = dataset2[i].Place2;
+			return location;
+								}
+					}
+		}
+		
+		x= getCountryForBubble();
+		y= getIsoForBubble();
+		console.log('yay',y);
+map.bubbles([
+  {
+    radius: 15,
+    centered: y,
+    country:x,
+    fillKey: 'Place'
+  }
+], {
+  popupTemplate: function(geo, dataw) {
+    return '<div class="hoverinfo">World cup fpr this year took place in ' +'' + dataw.country;
+  }
+});
 }
 function description(dataset){
 var count = dataset.length;
