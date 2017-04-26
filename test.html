@@ -253,7 +253,7 @@ body {
         projection: 'mercator',
         height: 700,
         fills: {
-          defaultFill: '#A4CDDD',
+          defaultFill: '#A29F9E',
           lt50: '6F88C6',
           first: '#F5D233',
 		  second: '#6E7C81',
@@ -541,7 +541,7 @@ function worldMap(datasett)
 					if ( value == 1) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#EDE60E" };} // yellow first
 					if ( value == 2) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals, matches: matches,numberOfThings: value, fillColor: "#0E44ED" };} // blue second
 					if ( value == 3) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#ED0E4E" };} // red third
-					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#6E7C81" };}
+					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#1DD8E1" };} // baby blue
     });
 //	console.log(data[0].Team);
 		var map = new Datamap({
@@ -550,7 +550,7 @@ function worldMap(datasett)
 			projection: 'mercator',
 			height: 700,
 			fills: {
-			  defaultFill: '#A4CDDD'
+			  defaultFill: '#A29F9E'
 			},
 			
 			data: dataset,
@@ -569,7 +569,7 @@ function worldMap(datasett)
             highlightBorderWidth: 2,
             // don't change color on mouse hover
             highlightFillColor: function(geo) {
-                return geo['fillColor'] || '#A4CDDD' ;
+                return geo['fillColor'] || '#A29F9E' ;
             },
             // only change border
             highlightBorderColor: '#B7B7B7',
