@@ -255,16 +255,17 @@ body {
         height: 700,
         fills: {
           defaultFill: '#A29F9E',
-          lt50: '6F88C6',
-          first: '#F5D233',
-		  second: '#6E7C81',
-		  third: '#9A7931'
+          'Gold medal': '#EDE60E',
+		  'Silver medal': '#0E44ED',
+		  'Bronze medal': '#ED0E4E',
+		  'Participated':  '#1DD8E1'
         },
         
         data: {
         }
       });
-      
+	  map.legend();
+
      </script>
 	 
 	 
@@ -551,7 +552,11 @@ function worldMap(datasett)
 			projection: 'mercator',
 			height: 700,
 			fills: {
-			  defaultFill: '#A29F9E'
+			  defaultFill: '#A29F9E',
+          "Gold medal": '#EDE60E',
+		  "Silver medal": '#0E44ED',
+		 "Bronze medal": '#ED0E4E',
+		  Participated:  '#1DD8E1'
 			},
 			
 			data: dataset,
@@ -621,6 +626,7 @@ function worldMap(datasett)
             }
         }
 		  });
+		  map.legend();
 }
 function description(dataset){
 var count = dataset.length;
