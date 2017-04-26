@@ -2,24 +2,24 @@
 <meta charset="utf-8">
 <title>Final Project</title>
 <style>
-
 	.form-control
 {
      width:auto !important;
 }
 
-
-
+/* body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 800px;
+  height: 500px;
+}*/ 
 svg {
     width: 100%;
     height: 100%;
     position: center;
 }
-
 text{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 .toolTip {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
@@ -35,67 +35,52 @@ text{
     padding: 5px;
     text-align: center;
 }
-
 .legend {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 60%;
 }
-
 rect {
     stroke-width: 2;
 }
-
 text {
   font: 10px sans-serif;
 }
-
 .axis text {
   font: 10px sans-serif;
 }
-
 .axis path{
   fill: none;
   stroke: #000;
 }
-
 .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
-
 .axis .tick line {
   stroke-width: 1;
   stroke: rgba(0, 0, 0, 0.2);
 }
-
 .axisHorizontal path{
   fill: none;
 }
-
 .axisHorizontal line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
-
 .axisHorizontal .tick line {
   stroke-width: 1;
   stroke: rgba(0, 0, 0, 0.2);
 }
-
 .bar {
   fill: steelblue;
   fill-opacity: .9;
 }
-
 .x.axis path {
   display: none;
 }
-
-
 div.wrap {
-
     width: 600px;
 	height: 1300px
 	border:dashed 1px black;
@@ -130,10 +115,7 @@ div.wrap {
   box-shadow: 0 0 100px #ccc;
   background-color: #fff;
   width:1500px;
-
 }
-
-
   #wrapper2 {
   border: 1px #e4e4e4 solid;
   padding: 20px;
@@ -144,7 +126,6 @@ div.wrap {
   height:750px;
   position: relative;
 }
-
 body { 
    background:url(worldcup2.jpg);
     padding: 15px;
@@ -152,7 +133,6 @@ body {
   font: normal 10px "Helvetica Neue", Helvetica, sans-serif; 
   margin: 2em; 
 }
-
 .dropbtn {
     background-color: #415FD9;
     color: white;
@@ -161,16 +141,13 @@ body {
     border: none;
     cursor: pointer;
 }
-
 .dropbtn:hover, .dropbtn:focus {
     background-color: #3e8e41;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -180,22 +157,16 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown a:hover {background-color: #f1f1f1}
-
 .show {display:block;}
-
-
 </style>
 <body>
-
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
@@ -207,7 +178,6 @@ body {
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="datamaps.world.min.js"></script>	
-
  <div id="wrapper" class="container">
 <div class="row">
         <div class="col-md-4">
@@ -254,12 +224,8 @@ body {
 		
 <div id="textDiv" style="color:Green; font-family:Calibri; font-size:22px; font-weight:bold"> <p>Please select a year to show the map</p> </div>
       </div>
-
 			  <a href="#wrap" class="btn btn-default">Compare Countries performance in this year</a>
-
-
 <br></br>
-
  <div id="wrapper2" class="container"  > 
 <div id="worldmap" class="container"  >
 </div>
@@ -270,12 +236,8 @@ body {
 <div id="stackedbar" class="container">
 </div>
 </div>
-
-
 <link href="nv.d3.css" rel="stylesheet" type="text/css">
     <script src="nv.d3.js"></script>
-
-
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     
     <script src="http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
@@ -283,8 +245,6 @@ body {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       
-
-
      <script>
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
@@ -301,7 +261,6 @@ body {
         },
         
         data: {
-
         }
       });
       
@@ -311,23 +270,18 @@ body {
 	 <!-- jsjsjsjs -->
 	 
 	 <script>
-
-
 var dataset;
 d3.json("./WorldCupStatistics1930to2014.json", function(error, data)
 {
 	dataset = data;
 	//console.log('filter:', dataset);
 });
-
-
 var dataset2;
 d3.json("./WorldCupTournaments.json", function(error, data)
 {
 	dataset2 = data;
 	//console.log( "hhuan" ,dataset2);
 });
-
 function filterData(dataset, year)
 {
 	var filteredData = [];
@@ -339,46 +293,32 @@ function filterData(dataset, year)
 			filteredData.push(dataset[i]);
 		}
 	}
-
 	return filteredData;
 }
-
-
 function plotGroup(dataset)
 {
-
-
-	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/20), 
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
 			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/20)},
-		width = parseInt(d3.select('body').style('width'), 9) - margin.left - margin.right,
-		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
-
+			left: (parseInt(d3.select('body').style('width'), 10)/90)},
+		width = 500 ,
+		height = 400;
 	var x0 = d3.scale.ordinal()
 		.rangeRoundBands([0, width], .2);
-
 	var x1 = d3.scale.ordinal();
-
 	var y = d3.scale.linear()
 		.range([height, 0]);
-
 	var colorRange = d3.scale.category20();
 	var color = d3.scale.ordinal()
 		.range(colorRange.range());
-
 	var xAxis = d3.svg.axis()
 		.scale(x0)
 		.orient("bottom");
-
 	var yAxis = d3.svg.axis()
 		.scale(y)
 		.orient("left")
 		.tickFormat(d3.format("1"));
-
 	var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
-
-
 	var svg = d3.select("#groupbarchart").append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
@@ -386,16 +326,13 @@ function plotGroup(dataset)
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		
 	var options = d3.keys(dataset[0]).filter(function(key) { return key == "GoalsFor" || key == "GoalsAgainst"; });
-
 	dataset.forEach(function(d) {
 		d.valores = options.map(function(name) { return {name: name, value: +d[name]}; });
 	});
-
 	x0.domain(dataset.map(function(d) { return d.Team; }));
 	x1.domain(options).rangeRoundBands([0, x0.rangeBand()]);
 	y.domain([0, d3.max(dataset, function(d) { return d3.max(d.valores, function(d) { return d.value; }); })]);
 	
-
 	
 	svg.append("g")
 		.attr("class", "x axis")
@@ -408,7 +345,6 @@ function plotGroup(dataset)
             .attr("dy", "1.4em")
 			.attr("transform", "rotate(-40)")
 			.style("text-anchor", "end");
-
 	svg.append("g")
 		.attr("class", "y axis")
 		.call(yAxis)
@@ -419,13 +355,11 @@ function plotGroup(dataset)
 		.attr("dy", "-4em")
 		.style("text-anchor", "end")
 		.text("Goals");
-
 	var bar = svg.selectAll(".bar")
 		.data(dataset)
 		.enter().append("g")
 		.attr("class", "rect")
 		.attr("transform", function(d) { return "translate(" + x0(d.Team) + ",0)"; });
-
 	bar.selectAll("rect")
 		.data(function(d) { return d.valores; })
 		.enter().append("rect")
@@ -435,7 +369,6 @@ function plotGroup(dataset)
 		.attr("value", function(d){return d.name;})
 		.attr("height", function(d) { return height - y(d.value); })
 		.style("fill", function(d) { return color(d.name); });
-
 	bar.on("mousemove", function(d){
 			divTooltip.style("left", d3.event.pageX+10+"px");
 			divTooltip.style("top", d3.event.pageY-25+"px");
@@ -451,20 +384,16 @@ function plotGroup(dataset)
 	bar.on("mouseout", function(d){
 			divTooltip.style("display", "none");
 		});
-
-
 	var legend = svg.selectAll(".legend")
 		.data(options.slice())
 		.enter().append("g")
 		.attr("class", "legend")
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
 	legend.append("rect")
 		.attr("x", width - 18)
 		.attr("width", 20)
 		.attr("height", 18)
 		.style("fill", color);
-
 	legend.append("text")
 		.attr("x", width - 24)
 		.attr("y", 9)
@@ -472,61 +401,44 @@ function plotGroup(dataset)
 		.style("text-anchor", "end")
 		.text(function(d) { return d; });
     
-
 }
-
-
 function stackedBar(dataset)
 {
-
-	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/20), 
+	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
 			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/20)},
-		width = parseInt(d3.select('body').style('width'), 9) - margin.left - margin.right,
-		height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
-
+			left: (parseInt(d3.select('body').style('width'), 10)/90)},
+		width = 500,
+		height = 400;
 	var x = d3.scale.ordinal()
 	.rangeRoundBands([0, width], .1);
-
 	var y = d3.scale.linear()
 	.rangeRound([height, 0]);
-
 	var color = d3.scale.ordinal()
 	.range(["#6AC675","#C6AF6A", "#B73838"]);
-
 	var xAxis = d3.svg.axis()
 	.scale(x)
 	.orient("bottom");
-
 	var yAxis = d3.svg.axis()
 	.scale(y)
 	.orient("left")
 	.tickFormat(d3.format("1"));
-
 	var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
-
 	var svg = d3.select("#stackedbar").append("svg")
 	.attr("width", width + margin.left + margin.right)
 	.attr("height", height + margin.top + margin.bottom)
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 	var data = dataset;
-
 	color.domain(d3.keys(data[0]).filter(function(key) { return key == "Won" || key == "Drawn" || key == "Lost"; }));
-
 	data.forEach(function(d) {
 		var y0 = 0;
 		d.matches = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
 		d.total = d.matches[d.matches.length - 1].y1;
 	});
-
 	data.sort(function(a, b) { return b.total - a.total; });
-
 	x.domain(data.map(function(d) { return d.Team; }));
 	y.domain([0, d3.max(data, function(d) { return d.total; })]);
-
 	svg.append("g")
 	  .attr("class", "x axis")
 	  .attr("transform", "translate(0," + height + ")")
@@ -538,8 +450,6 @@ function stackedBar(dataset)
             .attr("dy", "1.4em")
 			.attr("transform", "rotate(-40)")
 			.style("text-anchor", "end");
-
-
 	svg.append("g")
 	  .attr("class", "y axis")
 	  .call(yAxis)
@@ -550,13 +460,11 @@ function stackedBar(dataset)
 	  .attr("dy", "-4em")
 	  .style("text-anchor", "end")
 	  .text("Matches");
-
 	var team = svg.selectAll(".team")
 	  .data(data)
 	  .enter().append("g")
 	  .attr("class", "g")
 	  .attr("transform", function(d) { return "translate(" + x(d.Team) + ",0)"; });
-
 	team.selectAll("rect")
 	  .data(function(d) { return d.matches; })
 	  .enter().append("rect")
@@ -564,7 +472,6 @@ function stackedBar(dataset)
 	  .attr("y", function(d) { return y(d.y1); })
 	  .attr("height", function(d) { return y(d.y0) - y(d.y1); })
 	  .style("fill", function(d) { return color(d.name); });
-
 	  
 	team.on("mousemove", function(d){
 			divTooltip.style("left", d3.event.pageX+10+"px");
@@ -577,7 +484,6 @@ function stackedBar(dataset)
 			elementData = elements[l].__data__
 			divTooltip.html((d.Team)+"<br>"+elementData.name+"<br>"+matchtypes(d));
 			});
-
 			
 	function matchtypes(d){ 
 		if (elementData.name == "Won")
@@ -593,7 +499,6 @@ function stackedBar(dataset)
 			return d.Lost;
 		}			
 	};
-
 			
 	team.on("mouseout", function(d){
 			divTooltip.style("display", "none");
@@ -605,26 +510,20 @@ function stackedBar(dataset)
 	.enter().append("g")
 	  .attr("class", "legend")
 	  .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
 	legend.append("rect")
 	  .attr("x", width - 18)
 	  .attr("width", 18)
 	  .attr("height", 18)
 	  .style("fill", color);
-
 	legend.append("text")
 	  .attr("x", width - 24)
 	  .attr("y", 9)
 	  .attr("dy", ".35em")
 	  .style("text-anchor", "end")
 	  .text(function(d) { return d; });
-
 }
-
-
 function worldMap(datasett)
 { // dataset is array of objects that have all the required data
-
 	//var year = selection;
 		var dataset = {};
     datasett.forEach(function(item){ //
@@ -644,8 +543,6 @@ function worldMap(datasett)
 					if ( value == 3) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#ED0E4E" };} // red third
 					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#6E7C81" };}
     });
-
-
 //	console.log(data[0].Team);
 		var map = new Datamap({
 			scope: 'world',
@@ -720,15 +617,9 @@ function worldMap(datasett)
 					'<br>Lost : <strong>', data.lost, ' matches.</strong>',
 					'<br>Scored : <strong>', data.goals, ' goals.</strong>',
                     '</div>'].join('');}
-
             }
         }
 		  });
-
-
-
-
-
 }
 function description(dataset){
 var count = dataset.length;
@@ -742,9 +633,6 @@ if(dataset2[i].Year == dataset[0].Year ){
 console.log("jklsdjhdfjkldflk",dataset[0].Year);
 document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count) + " and it took place in "+location;
 }
-
-
-
 function goto()
 	{
 		
@@ -756,9 +644,6 @@ function goto()
 		document.getElementById('worldmap').innerHTML = '';
 		document.getElementById('textDiv').innerHTML = '';
 		document.getElementById('info').innerHTML = '';
-
-
-
 		var dataToPlot = filterData(dataset, selection);
 		worldMap(dataToPlot);
 		plotGroup(dataToPlot);
@@ -767,5 +652,4 @@ function goto()
 	console.log(dataToPlot.length);// arrays of required data based on selection year.
 }	
 </script>
-
 </body>
