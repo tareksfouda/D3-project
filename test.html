@@ -9,11 +9,6 @@
 }
 
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 800px;
-  height: 500px;
-}
 
 svg {
     width: 100%;
@@ -202,7 +197,7 @@ body {
 
 
 </style>
-<body >
+<body>
 
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
@@ -210,9 +205,8 @@ body {
   <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" rel="stylesheet">
-  	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src ="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src ="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="datamaps.world.min.js"></script>	
@@ -328,11 +322,13 @@ d3.json("./WorldCupStatistics1930to2014.json", function(error, data)
 	dataset = data;
 	//console.log('filter:', dataset);
 });
+
+
 var dataset2;
 d3.json("./WorldCupTournaments.json", function(error, data)
 {
 	dataset2 = data;
-	console.log( "hhuan" ,dataset2);
+	//console.log( "hhuan" ,dataset2);
 });
 
 function filterData(dataset, year)
@@ -739,9 +735,15 @@ function worldMap(datasett)
 }
 function description(dataset){
 var count = dataset.length;
+var location;
 var x = dataset2.length;
-console.log("jklsdjhdfjkldflk",x)
-document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count);
+for(var i=0;i< dataset2.length;i++){
+if(dataset2[i].Year == dataset[0].Year ){
+ location = dataset2[i].Place;
+}
+}
+console.log("jklsdjhdfjkldflk",dataset[0].Year);
+document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count) + " and it took place in "+location;
 }
 
 
