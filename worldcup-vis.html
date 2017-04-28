@@ -7,11 +7,6 @@
      width:auto !important;
 }
 
-/* body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 800px;
-  height: 500px;
-}*/ 
 svg {
     width: 100%;
     height: 100%;
@@ -43,10 +38,10 @@ rect {
     stroke-width: 2;
 }
 text {
-  font: 10px sans-serif;
+  font: 12px sans-serif;
 }
 .axis text {
-  font: 10px sans-serif;
+  font: 12px sans-serif;
 }
 .axis path{
   fill: none;
@@ -103,12 +98,13 @@ div.wrap {
 }
 #stackedbar {
 	float:right;
-    width: 49%;
+    width: 50%;
     height: auto;
     padding: 10px;
     position: relative;
 }
-  #wrapper {
+
+#wrapper {
   border: 1px #e4e4e4 solid;
   padding: 20px;
   border-radius: 10px;
@@ -116,76 +112,57 @@ div.wrap {
   background-color: #fff;
   width:1500px;
 }
-  #wrapper2 {
+
+#wrapper2 {
   border: 1px #e4e4e4 solid;
-  padding: 20px;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   background-color: #fff;
-  width:1100px;
-  height:750px;
+  width:1140px;
+  height:800px;
   position: relative;
   background-color: #F8F8F8;
 }
+
 body { 
-   background:url(worldcup2.jpg);
-    padding: 15px;
+  padding: 15px;
   color: #0000;
-  font: normal 10px "Helvetica Neue", Helvetica, sans-serif; 
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif; 
   margin: 2em; 
 }
-.dropbtn {
-    background-color: #415FD9;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+
+
+iframe {
     border: none;
-    cursor: pointer;
 }
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+
+.ui-select{
+    width:200px;
+    height:40px;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+.ui-page{
+    background:url("./worldcup2.jpg") no-repeat;
+    background-size:cover;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown a:hover {background-color: #f1f1f1}
-.show {display:block;}
+
 </style>
 <body>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-  <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
-  <link href="bootstrap-3.3.6-dist/css/bootstrap-theme.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src ="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
 <script src="datamaps.world.min.js"></script>	
- <div id="wrapper" class="container">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<div id="wrapper" class="container">
 <div class="row">
         <div class="col-md-4">
-<img src="fifa.png" style="width:120px;height:200px;">
+			<img src="world-cup-art.jpg" style="width:300px;height:300px;">
         </div>
        
-      <p style="font-size:70px;position:relative;font-family:Lato;">WorldCup statistics</p>
+      <p style="font-size:70px;position:relative;font-family:Lato;", align="left">WorldCup Statistics<br> 1930-2014</p>
+	  <p style="font-size:14px;position:relative;font-family:Lato;", align="center">By Huan Huang, Tarek Fouda </p>
         </div>
 		
 		
@@ -197,68 +174,83 @@ body {
         </div>
      <br>
 <div class="container">
-      <div >
-        <h3 class="nine columns">Select Year</h3>
-        <select id="select-key" class= "form-control" onchange=goto()>
-		  <option selected="selected">Years</option>
-          <option value="1930">1930</option>
-          <option value="1934">1934</option>
-          <option value="1938">1938</option>
-          <option value="1950">1950</option>
-		  <option value="1954">1954</option>
-          <option value="1958">1958</option>
-          <option value="1962">1962</option>
-          <option value="1966">1966</option>
-		  <option value="1970">1970</option>
-          <option value="1974">1974</option>
-          <option value="1978">1978</option>
-          <option value="1982">1982</option>
-	      <option value="1986">1986</option>
-          <option value="1990">1990</option>
-          <option value="1994">1994</option>
-          <option value="1998">1998</option>
-		  <option value="2002">2002</option>
-          <option value="2006">2006</option>
-          <option value="2010">2010</option>
-          <option value="2014">2014</option>
-        </select>
+	
+	  <div class="ui-field-contain">
+			<h3 class="nine columns">Select Year</h3>
+			<select name="select-native-1" id="select-key" onchange=goto()>
+			  <option selected="selected" style="color: black;">Year</option>
+			  <option value="1930" style="color: black;">1930</option>
+			  <option value="1934" style="color: black;">1934</option>
+			  <option value="1938" style="color: black;">1938</option>
+			  <option value="1950" style="color: black;">1950</option>
+			  <option value="1954" style="color: black;">1954</option>
+			  <option value="1958" style="color: black;">1958</option>
+			  <option value="1962" style="color: black;">1962</option>
+			  <option value="1966" style="color: black;">1966</option>
+			  <option value="1970" style="color: black;">1970</option>
+			  <option value="1974" style="color: black;">1974</option>
+			  <option value="1978" style="color: black;">1978</option>
+			  <option value="1982" style="color: black;">1982</option>
+			  <option value="1986" style="color: black;">1986</option>
+			  <option value="1990" style="color: black;">1990</option>
+			  <option value="1994" style="color: black;">1994</option>
+			  <option value="1998" style="color: black;">1998</option>
+			  <option value="2002" style="color: black;">2002</option>
+			  <option value="2006" style="color: black;">2006</option>
+			  <option value="2010" style="color: black;">2010</option>
+			  <option value="2014" style="color: black;">2014</option>
+			</select>
+			
+			<a href="#" onclick="$.mobile.silentScroll(1200)" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Performance comparison for this year</a> 
+			<a href="#popup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch Attendance Chart</a>
+			
+			<div data-role="popup" id="popup" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+				<iframe src="http://www.cs.odu.edu/~hhuang/d3examples/attendanceChart.html" width="497" height="298" seamless=""></iframe>
+			</div>
+		</div>
 		
-<div id="textDiv" style="color:Green; font-family:Calibri; font-size:22px; font-weight:bold"> <p>Please select a year to show the map</p> </div>
-      </div>
-			  <a href="#wrap" class="btn btn-default">Compare Countries performance in this year</a>
-<br></br>
+		
+	
+		<div id="textDiv" style="font-family:Calibri; font-size:22px; font-weight:bold"> <p>Please select a year for the map.</p> </div>
+
+	
+
+
  <div id="wrapper2" class="container" > 
+ 
 <div id="worldmap" class="container"  >
+
 </div>
 </div>
 <div id = "wrap">
+
 <div id="groupbarchart" class="container">
 </div>
 <div id="stackedbar" class="container">
 </div>
 </div>
-<link href="nv.d3.css" rel="stylesheet" type="text/css">
-    <script src="nv.d3.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-    
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.1/typeahead.bundle.min.js"></script>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<div>	
+	<a href="#" onclick="$.mobile.silentScroll(400)" style="text-align:center" data-role="button">Back to Map</a>
+
+</div>
+</div>
+
+
       
-     <script>
+<script>
        //basic map config with custom fills, mercator projection
       var map = new Datamap({
         scope: 'world',
         element: document.getElementById('worldmap'),
         projection: 'mercator',
-        height: 700,
+        height: 760,
         fills: {
           defaultFill: '#A29F9E',
-          'Gold medal': '#EDE60E',
-		  'Silver medal': '#0E44ED',
-		  'Bronze medal': '#ED0E4E',
-		  'Participated':  '#1DD8E1'
+          'Gold medal': '#EEA828',
+		  'Silver medal': '#E3485A',
+		  'Bronze medal': '#3E50D4',
+		  'Participated':  '#55B8BD'
         },
         
         data: {
@@ -267,12 +259,14 @@ body {
 	  map.legend();
 
 
-     </script>
-	 
-	 
-	 <!-- jsjsjsjs -->
-	 
-	 <script>
+</script>
+
+<!-- -->
+	
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<script>
+
 var dataset;
 d3.json("./WorldCupStatistics1930to2014.json", function(error, data)
 {
@@ -302,8 +296,8 @@ function plotGroup(dataset)
 {
 	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
-			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/90)},
+			bottom: (parseInt(d3.select('body').style('width'), 8)/2), 
+			left: (parseInt(d3.select('body').style('width'), 10)/40)},
 		width = 500 ,
 		height = 400;
 	var x0 = d3.scale.ordinal()
@@ -344,9 +338,9 @@ function plotGroup(dataset)
 		.selectAll("text")
 			.attr("y", 0)
 			.attr("x", 9)
-			.attr("dx", "-1.6em")
-            .attr("dy", "1.4em")
-			.attr("transform", "rotate(-40)")
+			.attr("dx", "-1.4em")
+            .attr("dy", "1.2em")
+			.attr("transform", "rotate(-45)")
 			.style("text-anchor", "end");
 	svg.append("g")
 		.attr("class", "y axis")
@@ -354,8 +348,8 @@ function plotGroup(dataset)
 		.append("text")
 		.attr("transform", "rotate(-90)")
 		.attr("y", 7)
-		.attr("dx", "-12em")
-		.attr("dy", "-4em")
+		.attr("dx", "-15em")
+		.attr("dy", "-3em")
 		.style("text-anchor", "end")
 		.text("Goals");
 	var bar = svg.selectAll(".bar")
@@ -394,7 +388,7 @@ function plotGroup(dataset)
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 	legend.append("rect")
 		.attr("x", width - 18)
-		.attr("width", 20)
+		.attr("width", 18)
 		.attr("height", 18)
 		.style("fill", color);
 	legend.append("text")
@@ -409,8 +403,8 @@ function stackedBar(dataset)
 {
 	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
-			bottom: (parseInt(d3.select('body').style('width'), 10)/5), 
-			left: (parseInt(d3.select('body').style('width'), 10)/90)},
+			bottom: (parseInt(d3.select('body').style('width'), 8)/2), 
+			left: (parseInt(d3.select('body').style('width'), 10)/40)},
 		width = 500,
 		height = 400;
 	var x = d3.scale.ordinal()
@@ -449,9 +443,9 @@ function stackedBar(dataset)
 	  .selectAll("text")
 			.attr("y", 0)
 			.attr("x", 9)
-			.attr("dx", "-1.6em")
-            .attr("dy", "1.4em")
-			.attr("transform", "rotate(-40)")
+			.attr("dx", "-1.4em")
+            .attr("dy", "1.2em")
+			.attr("transform", "rotate(-45)")
 			.style("text-anchor", "end");
 	svg.append("g")
 	  .attr("class", "y axis")
@@ -459,8 +453,8 @@ function stackedBar(dataset)
 	  .append("text")
 	  .attr("transform", "rotate(-90)")
 	  .attr("y", 6)
-	  .attr("dx", "-12em")
-	  .attr("dy", "-4em")
+	  .attr("dx", "-15em")
+	  .attr("dy", "-3em")
 	  .style("text-anchor", "end")
 	  .text("Matches");
 	var team = svg.selectAll(".team")
@@ -539,25 +533,25 @@ function worldMap(datasett)
 						draw=item.Drawn,
 						lost=item.Lost,
 						goals=item.GoalsFor;
-					console.log(iso);
-					console.log(value);
-					if ( value == 1) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#EDE60E" };} // yellow first
-					if ( value == 2) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals, matches: matches,numberOfThings: value, fillColor: "#0E44ED" };} // blue second
-					if ( value == 3) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#ED0E4E" };} // red third
-					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#1DD8E1" };} // baby blue
+					//console.log(iso);
+					//console.log(value);
+					if ( value == 1) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#EEA828" };} // yellow first
+					if ( value == 2) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals, matches: matches,numberOfThings: value, fillColor: "#E3485A" };} // red second
+					if ( value == 3) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches, numberOfThings: value, fillColor: "#3E50D4" };} // blue third
+					if ( value == 0) {dataset[iso] = {won: won,draw:draw,lost:lost,goals:goals,  matches: matches,  numberOfThings: value, fillColor: "#55B8BD" };} // baby blue
     });
 //	console.log(data[0].Team);
 		var map = new Datamap({
 			scope: 'world',
 			element: document.getElementById('worldmap'),
 			projection: 'mercator',
-			height: 700,
+			height: 760,
 			fills: {
-			  defaultFill: '#A29F9E',
-          "Gold medal": '#EDE60E',
-		  "Silver medal": '#0E44ED',
-		 "Bronze medal": '#ED0E4E',
-		  Participated:  '#1DD8E1'
+				defaultFill: '#A29F9E',
+				"Gold medal": '#EEA828',
+				"Silver medal": '#E3485A',
+				"Bronze medal": '#3E50D4',
+				Participated:  '#55B8BD'
 			},
 			
 			data: dataset,
@@ -585,7 +579,7 @@ function worldMap(datasett)
                 // don't show tooltip if country don't present in dataset
                 if (!data) { return ['<div class="hoverinfo">',
                     '<strong>', geo.properties.name, '</strong>',
-					'<br>has not participated in this World Cup Championship<strong>',
+					'<br>Has not participated in this World Cup Championship.<strong>',
                     '</div>'].join('');}
                 // tooltip content
 				if (data.numberOfThings == 1){return ['<div class="hoverinfo">',
@@ -653,7 +647,7 @@ function worldMap(datasett)
 		
 		x= getCountryForBubble();
 		y= getIsoForBubble();
-		console.log('yay',y);
+		//console.log('yay',y);
   map.addPlugin('pins', function(layer, data, options) {
         var self = this,
             fillData = this.options.fills,
@@ -672,18 +666,20 @@ function worldMap(datasett)
             .attr('height', 25)
             .attr('width', 20)
             .attr('x', function(datum) {
-            console.log('hey')
+            //console.log('hey')
             var latLng;
             if (datumHasCoords(datum)) {
                 latLng = self.latLngToXY(datum.latitude, datum.longitude);
-				console.log('1');
+				//console.log('1');
             } else if (datum.centered) {
                 latLng = self.path.centroid(svg.select('path.' + (datum.centered)).data()[0]);
 				latLng[0] = latLng[0]-12;
 				latLng[1] = latLng[1]-12;
-				console.log('2' , latLng);
+				//console.log('2' , latLng);
             }
-            if (latLng){ return latLng[0]; console.log('3' , latLng[0]);}
+            if (latLng){ return latLng[0]; 
+			//console.log('3' , latLng[0]);
+			}
         })
             .attr('y', function(datum) {
             var latLng;
@@ -698,11 +694,11 @@ function worldMap(datasett)
         })
 
             .on('mouseover', function(datum) {
-            console.log('mousover!');
+            //console.log('mousover!');
             var $this = d3.select(this);
 
             if (options.popupOnHover) {
-                console.log('going', datum)
+                //console.log('going', datum)
                 self.updatePopup($this, datum, options, svg);
             }
         })
@@ -755,8 +751,8 @@ if(dataset2[i].Year == dataset[0].Year ){
  location = dataset2[i].Place;
 }
 }
-console.log("jklsdjhdfjkldflk",dataset[0].Year);
-document.getElementById('textDiv').innerHTML = "The number of countries who participated in this World Cup Tournament was "+ (count) + " and it took place in "+location;
+//console.log("jklsdjhdfjkldflk",dataset[0].Year);
+document.getElementById('textDiv').innerHTML = "There were "+ (count) +" countries participated in this World Cup Tournament and it was hosted in "+location +".";
 }
 function goto()
 	{
@@ -774,7 +770,62 @@ function goto()
 		plotGroup(dataToPlot);
 		stackedBar(dataToPlot);
 		description(dataToPlot);
-	console.log(dataToPlot.length);// arrays of required data based on selection year.
+	//console.log(dataToPlot.length);// arrays of required data based on selection year.
 }	
 </script>
+
+<link rel="stylesheet" href="./popup/jquery.mobile-1.4.5.min.css">		
+<script src="./popup/jquery.js"></script>
+<script src="./popup/jquery.mobile-1.4.5.min.js"></script>
+<script>
+
+$( document ).on( "pagecreate", function() {
+    // The window width and height are decreased by 30 to take the tolerance of 15 pixels at each side into account
+    function scale( width, height, padding, border ) {
+        var scrWidth = $( window ).width() - 30,
+            scrHeight = $( window ).height() - 30,
+            ifrPadding = 2 * padding,
+            ifrBorder = 2 * border,
+            ifrWidth = width + ifrPadding + ifrBorder,
+            ifrHeight = height + ifrPadding + ifrBorder,
+            h, w;
+        if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+            w = ifrWidth;
+            h = ifrHeight;
+        } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+            w = scrWidth;
+            h = ( scrWidth / ifrWidth ) * ifrHeight;
+        } else {
+            h = scrHeight;
+            w = ( scrHeight / ifrHeight ) * ifrWidth;
+        }
+        return {
+            'width': w - ( ifrPadding + ifrBorder ),
+            'height': h - ( ifrPadding + ifrBorder )
+        };
+    };
+    $( ".ui-popup iframe" )
+        .attr( "width", 0 )
+        .attr( "height", "auto" );
+    $( "#popup" ).on({
+        popupbeforeposition: function() {
+            // call our custom function scale() to get the width and height
+            var size = scale( 800, 530, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popup iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popup iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+});
+
+</script>
+
+
 </body>
