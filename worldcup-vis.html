@@ -119,7 +119,7 @@ div.wrap {
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   background-color: #fff;
-  width:1140px;
+  width:1142px;
   height:800px;
   position: relative;
   background-color: #F8F8F8;
@@ -149,11 +149,10 @@ iframe {
 
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
-<script src="datamaps.world.min.js"></script>	
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="./d3/d3.v3.min.js"></script>
+<script src="./topojson/topojson.v1.min.js"></script>
+<script src="./datamaps.world.min.js"></script>	
+<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
 
 <div id="wrapper" class="container">
 <div class="row">
@@ -174,11 +173,11 @@ iframe {
         </div>
      <br>
 <div class="container">
-	
-	  <div class="ui-field-contain">
-			<h3 class="nine columns">Select Year</h3>
+	<div class="ui-grid-b">
+	  <div class="ui-block-a" style="width: 19%; padding-left: 0px">
+			
 			<select name="select-native-1" id="select-key" onchange=goto()>
-			  <option selected="selected" style="color: black;">Year</option>
+			  <option selected="selected" style="color: black;">Select Year</option>
 			  <option value="1930" style="color: black;">1930</option>
 			  <option value="1934" style="color: black;">1934</option>
 			  <option value="1938" style="color: black;">1938</option>
@@ -200,14 +199,17 @@ iframe {
 			  <option value="2010" style="color: black;">2010</option>
 			  <option value="2014" style="color: black;">2014</option>
 			</select>
-			
-			<a href="#" onclick="$.mobile.silentScroll(1200)" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Performance comparison for this year</a> 
-			<a href="#popup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch Attendance Chart</a>
-			
-			<div data-role="popup" id="popup" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-				<iframe src="http://www.cs.odu.edu/~hhuang/d3examples/attendanceChart.html" width="497" height="298" seamless=""></iframe>
-			</div>
 		</div>
+			<div class="ui-block-b" style="width: 29.8%;">
+				<a href="#" onclick="$.mobile.silentScroll(1200)" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Performance comparison for this year</a> 
+			</div>
+			<div class="ui-block-b" style="width: 25%;">
+				<a href="#popup" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch Attendance Chart</a>
+			</div>
+			<div data-role="popup" id="popup" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+				<iframe src="./attendanceChart.html" width="497" height="298" seamless=""></iframe>
+			</div>
+	</div>
 		
 		
 	
@@ -231,7 +233,7 @@ iframe {
 </div>
 
 <div>	
-	<a href="#" onclick="$.mobile.silentScroll(400)" style="text-align:center" data-role="button">Back to Map</a>
+	<a href="#" onclick="$.mobile.silentScroll(350)" style="text-align:center" data-role="button">Back to Map</a>
 
 </div>
 </div>
@@ -239,7 +241,7 @@ iframe {
 
       
 <script>
-       //basic map config with custom fills, mercator projection
+       //initial map
       var map = new Datamap({
         scope: 'world',
         element: document.getElementById('worldmap'),
@@ -263,8 +265,8 @@ iframe {
 
 <!-- -->
 	
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<script src="./js1120/jquery-1.12.0.min.js"></script>
+<script src="./js1120/jquery.tools.min.js"></script>
 <script>
 
 var dataset;
@@ -662,7 +664,7 @@ function worldMap(datasett)
         bubbles.enter()
             .append('image')
             .attr('class', 'datamaps-pin')
-            .attr('xlink:href', 'https://img.clipartfest.com/b5f7aa11c04bde66e0ad8d4d80f34297_big-image-png-gps-location-icon-clipart_1911-2400.png')
+            .attr('xlink:href', './pingpoint.png')
             .attr('height', 25)
             .attr('width', 20)
             .attr('x', function(datum) {
