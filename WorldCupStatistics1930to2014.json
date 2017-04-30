@@ -2031,8 +2031,8 @@
     },
     {
       "Year" : 1974,
-      "Team" : "Germany",
-      "ISO" : "DEU",
+      "Team" : "Germany PR",
+      "ISO" : "Germany PR",
       "GoalsFor" : 5,
       "GoalsAgainst" : 6,
       "PenaltyGoals" : 0,
@@ -2074,7 +2074,7 @@
     {
       "Year" : 1974,
       "Team" : "Haiti",
-      "ISO" : "HDI",
+      "ISO" : "HTI",
       "GoalsFor" : 2,
       "GoalsAgainst" : 14,
       "PenaltyGoals" : 0,

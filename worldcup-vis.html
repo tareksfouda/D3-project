@@ -119,7 +119,7 @@ div.wrap {
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
   background-color: #fff;
-  width:1142px;
+  width:1140px;
   height:800px;
   position: relative;
   background-color: #F8F8F8;
@@ -298,10 +298,10 @@ function plotGroup(dataset)
 {
 	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
-			bottom: (parseInt(d3.select('body').style('width'), 8)/2), 
+			bottom: (parseInt(d3.select('body').style('width'), 9)/3), 
 			left: (parseInt(d3.select('body').style('width'), 10)/40)},
 		width = 500 ,
-		height = 400;
+		height = 350;
 	var x0 = d3.scale.ordinal()
 		.rangeRoundBands([0, width], .2);
 	var x1 = d3.scale.ordinal();
@@ -405,10 +405,10 @@ function stackedBar(dataset)
 {
 	var margin = {top: (parseInt(d3.select('body').style('width'), 10)/90), 
 			right: (parseInt(d3.select('body').style('width'), 10)/5), 
-			bottom: (parseInt(d3.select('body').style('width'), 8)/2), 
+			bottom: (parseInt(d3.select('body').style('width'), 9)/3), 
 			left: (parseInt(d3.select('body').style('width'), 10)/40)},
 		width = 500,
-		height = 400;
+		height = 350;
 	var x = d3.scale.ordinal()
 	.rangeRoundBands([0, width], .1);
 	var y = d3.scale.linear()
@@ -455,10 +455,10 @@ function stackedBar(dataset)
 	  .append("text")
 	  .attr("transform", "rotate(-90)")
 	  .attr("y", 6)
-	  .attr("dx", "-15em")
+	  .attr("dx", "-12em")
 	  .attr("dy", "-3em")
 	  .style("text-anchor", "end")
-	  .text("Matches");
+	  .text("Matches Played");
 	var team = svg.selectAll(".team")
 	  .data(data)
 	  .enter().append("g")
